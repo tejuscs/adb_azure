@@ -25,18 +25,19 @@ Find more details on getting started [here](https://docs.oracle.com/en-us/iaas/C
 
 ### Developers and Database Users
 
-Lab 1: Provisioning Autonomous Databases@Azure
-Lab 2: Connect Securely with Visual Studio
-Lab 3: Migrate to ADB using Data Pump
-Lab 4: Connect ADB with Swingbench application
-Lab 5: Monitor ADB using Monitor Metrics
-Lab 6: Manage Database Performance
-Lab 7: Connect PowerBI with ADB
+* Lab 1: Provisioning Autonomous Databases@Azure
+* Lab 2: Connect Securely with Visual Studio
+* Lab 3: Migrate to ADB using Data Pump
+* Lab 4: Connect ADB with Swingbench application
+* Lab 5: Monitor ADB using Monitor Metrics
+* Lab 6: Manage Database Performance
+* Lab 7: Connect PowerBI with ADB
 
 Please proceed to the next lab.
 
 ## Acknowledgements
 - **Authors/Contributors** - Autonomous Database Product Management
+- **Contributors** - Sanjay Rahane, Principal Cloud Architect
 - **Last Updated By/Date** - Tejus Subrahmanuya, July 2024
 
 
