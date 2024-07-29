@@ -1,9 +1,11 @@
 
-# Provisioning an Autonomous Transaction Processing Database Instance
+# Pre-requisiteis to provision an Autonomous Transaction Processing Database@Azure
 
 ## Introduction
 
-This lab walks you through the steps to get started using the Oracle Autonomous Transaction Processing Database - Serverless @Azure. You will provision a new database.
+This lab walks you through the steps to get started using the Oracle Autonomous Database@Azure. 
+
+Pre-requisites before provisioning Autonomous Database@Azure.
 
 Estimated Time: 20 minutes
 
@@ -11,7 +13,7 @@ Estimated Time: 20 minutes
 
 As a database user, DBA or application developer:
 
-1. Rapidly deploy autonomous transaction processing databases in DB@Azure.
+1. Create Resource Group and Virtual Network in Azure portal.
 
 ## Task 1: Create a Resource Group
 
@@ -45,7 +47,7 @@ In this section, you will create a resource group and VNet as a pre-requisite st
 
     ![](./images/resource_group_image5.png " ")
 
-4.	Navigate to Resource groups from ‘Home screen’ and search for the Resource group created to validate as shown in below       screenshot
+4.	Navigate to Resource groups from ‘Home screen’ and search for the Resource group created to validate as shown in below screenshot
 
     ![](./images/resource_group_image6.png " ")
 
@@ -87,14 +89,11 @@ In this section, you will create a resource group and VNet as a pre-requisite st
     Navigate to **Virtual Network** and search for the name of the VNet created to see details about the virtual cloud network.
 
 
-## Task 3:  Create Autonomous Database
-
-
-You may now **proceed to the next lab**.
+You may now **proceed to the next lab** to provision Autonomous Database@Azure.
 
 ## Acknowledgements
 
-*All Done! You have successfully deployed your Autonomous Database instance @Azure and it should be ready for use in a few minutes.*
+*All Done! You have successfully created Resource Group and Virutal Network.*
 
 - **Author** - Sanjay Rahane, Principal Cloud Architect, North America Cloud Engineering Services (CES)
 

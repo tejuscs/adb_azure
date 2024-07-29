@@ -25,6 +25,7 @@ Find more details on getting started [here](https://docs.oracle.com/en-us/iaas/C
 
 ### Developers and Database Users
 
+* Lab 0: Pre-requisites to provision Autonomous Databases@Azure
 * Lab 1: Provisioning Autonomous Databases@Azure
 * Lab 2: Connect Securely with Visual Studio
 * Lab 3: Migrate to ADB using Data Pump
