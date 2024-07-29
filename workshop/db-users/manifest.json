@@ -8,10 +8,18 @@
             "filename": "./intro.md"
         },
         {
+            "title": "Lab 0: Pre-requisites to provision Autonomous Databases@Azure",
+            "description": "Pre-requisites to provision Autonomous Databases@Azure",
+            "partnumber": "Ennnnn_01",
+            "publisheddate": "07/25/2024",
+            "contentid": "12nnnn",
+            "filename": "./../../adb-provisioning-databases/adb-provisioning-pre-requisites.md"
+        },
+        {
             "title": "Lab 1: Provisioning Autonomous Databases@Azure",
             "description": "Provisioning Autonomous databases@Azure",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/27/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../adb-provisioning-databases/adb-provisioning-databases.md"
         },
@@ -19,7 +27,7 @@
             "title": "Lab 2: Connect Securely with Visual Studio",
             "description": "Connect Autonomous Database with Visual Studio",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/27/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../adb-connect-with-vs/adb-connect-with-vs.md"
         },
@@ -27,7 +35,7 @@
             "title": "Lab 3: Migrate to ADB using Data Pump",
             "description": "Migrate to Autonomous Database using Data Pump",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/27/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../migrate-to-adb/migrate-to-adb.md"
         },
@@ -35,7 +43,7 @@
             "title": "Lab 4: Connect ADB with Swingbench application",
             "description": "Connect Swingbench application with Autonomous Database",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/30/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../connect-to-swingbech-app/connect-to-swingbech-app.md"
         },
@@ -43,7 +51,7 @@
             "title": "Lab 5: Monitor ADB using Monitor Metrics",
             "description": "Monitor your Autonomous Database using Monitor Metrics",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/30/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../monitor-adb-using-monitor-metrics/monitor-adb-using-monitor-metrics.md"
         },
@@ -51,7 +59,7 @@
             "title": "Lab 6: Manage Database Performance",
             "description": "Manage Autonomous Database Performance with Performance Hub",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/30/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../manage-database-performance/manage-database-performance.md"
         },
@@ -59,7 +67,7 @@
             "title": "Lab 7: Connect PowerBI with ADB",
             "description": "Connect PowerBI with Autonomous Database",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "03/30/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../connect-to-powerbi/connect-to-powerbi.md"
         },
@@ -67,7 +75,7 @@
             "title": "Appendix",
             "description": "Common tools for windows Users Finding the IP address of your AEI Cluster.",
             "partnumber": "Ennnnn_01",
-            "publisheddate": "04/01/2020",
+            "publisheddate": "07/25/2024",
             "contentid": "12nnnn",
             "filename": "./../../adb-appendix/adb-appendix.md"
         }
