@@ -1,12 +1,9 @@
-# Configure a development system for use with your dedicated autonomous database
+# Configure a development system for use with your Autonomous database
 
 ## Introduction
 The Oracle Linux Cloud Developer image provides the latest development tools, languages, and Oracle Cloud Infrastructure Software Development Kits (SDKs) to rapidly deploy a comprehensive development environment. You can use the command line and GUI tools to write, debug, and run code in various languages, and develop modern applications on Oracle Cloud Infrastructure. As an application developer you can now provision a developer image within minutes and connect it to your dedicated or serverless database deployment.
 
-The image is pre-configured with tools and language drivers so that you can configure a secure connection using SQLCL and SQL*Plus.
-For a complete list of features, and preinstalled components click [this documentation](https://docs.oracle.com/en-us/iaa.s/oracle-linux/developer/index.htm).
-
-***NOTE: The Oracle Linux Cloud Developer Image is supported on all Compute shapes, except the GPU shapes. A minimum of 8 GB of memory is required for this image for all standard and flexible shapes. The one exception is the VM.Standard.E2.1.Micro shape, which only has 1 GB of memory allocated to it. Because of the small memory size in the VM.Standard.E2.1.Micro shape, some graphical intensive programs are not installed in the image. For more information, see x86_64 Notices.***
+The image is pre-configured with tools and so that you can configure a secure connection using Visual Studio and SQLCL.
 
 Estimated Time: 30 minutes
 
@@ -14,36 +11,44 @@ Estimated Time: 30 minutes
 
 As a database user, DBA or application developer,
 1. Create a development system from a pre-built Platform images
-2. Create an ssh tunnel from your local laptop into your development system
-3. Configure a secure connection from your development system to your dedicated autonomous database using Oracle SQL Developer, SQLCL and SQL*Plus.
+2. Configure a secure connection from your development system to your autonomous database using Visual Studio, Oracle SQL Developer, and SQLCL.
 
 ### Required Artifacts
 
-- An Oracle Cloud Infrastructure account with IAM privileges to provision compute instances
-- A pre-provisioned dedicated autonomous database instance. Refer to the lab **Provisioning Databases** in the **Autonomous Database Dedicated for Developers and Database Users** workshop on how to provision an ATP database.
-- VNC Viewer or other suitable VNC client on your local laptop
+- A pre-provisioned Autonomous database instance.
+- Microsoft Remote Desktop client on your local laptop.
 
 
-## Task 1: Provision Oracle Linux Cloud Developer Client image instance
-
-Deploying a pre-configured client machine instance.
+## Task 1: Connect Windows compute client to Remote Desktop
 
 - Log in to your cloud account using your tenant name, username and password.
-- Click **Compute --> Instances** in the left side menu under services.
-    ![This image shows the result of performing the above step.](./images/createcompute.png " ")
 
-- Click **Create Instance**.
-    ![This image shows the result of performing the above step.](./images/createcomputebutton.png " ")
+- Click **Menu** and select **Virtual machines**.
+    
+    ![This image shows the result of performing the above step.](./images/virtualmachine.png " ")
 
-- Specify a name for the compute instance and choose the right Compartment.
 
-- Click on *Change image* under *Image and shape* select **Oracle Linux Cloud Developer Image** from Oracle Image section.
-    ![This image shows the result of performing the above step.](./images/computeimage.png " ")
+- Click on your pre-configured windows virtual machine and copy the Public IP adress.
+    
+    ![This image shows the result of performing the above step.](./images/ip.png " ")
 
-- Select *Oracle Linux Cloud Developer* image under *Platfor images* and click *Select image*.
+- Open Microsft Remote Desktop application on your local machine and connect to Virtual machine.
+
+    ![This image shows the result of performing the above step.](./images/addpc.png " ")
+
+- Paste the IP address and connect to a User and add the connection..
+    
+    ![This image shows the result of performing the above step.](./images/addpd2.png " ")
+
+- Click on the newly added connection and open the connection to Windows Virtual machine.
+
+
 
     ![This image shows the result of performing the above step.](./images/computeimage1.png " ")
 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - Click *Change shape* to change the VM shape.
 
     ![This image shows the result of performing the above step.](./images/computeimage2.png " ")
