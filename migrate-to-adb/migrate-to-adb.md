@@ -1,27 +1,26 @@
-# Migrating to Dedicated ATP using Data Pump
+# Migrating to Autonomous Database using Data Pump
 
 ## Introduction
-Oracle Data Pump offers very fast bulk data and metadata movement between user managed Oracle databases and Autonomous Transaction Processing.
+Oracle Data Pump offers very fast bulk data and metadata movement between user managed Oracle databases and Autonomous Database.
 
-Data Pump Import lets you import data from Data Pump files residing on the Oracle Cloud Infrastructure Object Storage. You can save your data to your Cloud Object Store and use Oracle Data Pump to load data to dedicated ATP database.
+Data Pump Import lets you import data from Data Pump files residing on the Object Storage. You can save your data to your Cloud Object Store and use Oracle Data Pump to load data to Autonomous database.
 
-This lab walks you through the steps to migrate a sample application schema using Data Pump Import into your dedicated ATP database.
+This lab walks you through the steps to migrate a sample application schema using Data Pump Import into your Autonomous Database.
 
-Estimated Time: 45 minutes
+Estimated Time: 15 minutes
+
 
 ### Objectives
 
 As a database admin or user:
 
-1. Download a sample datapump export dump file from Oracle Learning Library github repository.
-2. Upload .dmp file to OCI Object storage bucket.
-3. Set up cloud credentials and use data pump import to move data to your ATP database.
+2. Set up cloud credentials and use the sample .dmp file to import data to your Autonomous database.
 
 
 ### Required Artifacts
 - An Oracle Cloud Infrastructure account with privileges to create object storage buckets and dedicated autonomous databases.
-- Access to a pre-provisioned dedicated ATP instance.
-- A pre-provisioned instance of Oracle Developer Client image in an application subnet.
+- Access to a pre-provisioned Autonomous Database instance.
+- A pre-provisioned Windows instance with Visual studio installed.
 
 ## Task 1: Download sample data pump export file from Oracle Learning Library github repo
 
