@@ -13,42 +13,15 @@ Estimated Time: 15 minutes
 ### Objectives
 
 As a database admin or user:
-
-2. Set up cloud credentials and use the sample .dmp file to import data to your Autonomous database.
+1. Set up cloud credentials and use the sample .dmp file to import data to your Autonomous database.
 
 
 ### Required Artifacts
-- An Oracle Cloud Infrastructure account with privileges to create object storage buckets and dedicated autonomous databases.
 - Access to a pre-provisioned Autonomous Database instance.
 - A pre-provisioned Windows instance with Visual studio installed.
 
-## Task 1: Download sample data pump export file from Oracle Learning Library github repo
 
-- Use the following command from your mac / PC to download a sample schema dump from OLL.
-
-    ```
-    <copy>
-    wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/8fcg4NskCWAIMvRpLE_ivj-a7baylei6XFF5_B1knzw/n/atpdpreview11/b/adb-data-pump/o/nodeapp.dmp
-    </copy>
-    ```
-
-## Task 2: Create an object storage bucket and upload dump
-
-- Log in to your OCI account with your user credentials.
-
-- Navigate to Object Storage from the top left hamburger menu.
-    ![This image shows the result of performing the above step.](./images/nav-to-obj-store.png " ")
-
-- Pick your compartment where you have the  privileges to create a bucket, and click **Create Bucket**.
-    ![This image shows the result of performing the above step.](./images/pick-compartment.png " ")
-
-- Create a bucket and let's name it **nodeAppBucket**. Leave the encryption options to default and click **Create Bucket**.
-    ![This image shows the result of performing the above step.](./images/nodeapp-bucket.png " ")
-
-- Upload the **nodeapp.dmp** file downloaded from OLL.
-    ![This image shows the result of performing the above step.](./images/upload-dmp.png " ")
-
-## Task 3: Generate an authentication token for your user account
+## Task 1: Generate an authentication token for your user account
 
 - Assuming you are logged into your OCI account, navigate to the user details page from the top right menu item as shown below.
     ![This image shows the result of performing the above step.](./images/get-token1.png " ")
