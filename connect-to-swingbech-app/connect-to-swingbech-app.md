@@ -1,5 +1,4 @@
-# Build 'Always-On' applications on the Autonomous Database
-
+# Connect Autonomous Database with Swinbench
 
 ## Introduction
 
