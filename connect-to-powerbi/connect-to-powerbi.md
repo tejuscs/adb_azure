@@ -24,7 +24,40 @@ As a developer or DBA:
 
 ## Task 1: Verify that Power BI Desktop is installed in your Virtual Machine
 
-## Task 2: Verifythat the Oracle Client for Microsoft Tools is installed
+- Open Power BI
+
+- Click File -> About
+
+- Verify it is the 64-bit version
+  ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
+
+## Task 2: Verify that the Oracle Client for Microsoft Tools is installed
+
+- Look in the ... directory
+
+- Run command ...
+
+## Task 3: Connect to an Exadata database
+
+- Open Power BI Desktop
+
+- Click **Get Data** and select **More...** at the bottom of the list
+
+- Select **Database** on the left side menu
+
+- Select **Oracle database** from the list
+
+- Click **Connect**
+
+## Task 
+
+
+## Task 
+
+## Task 
+
+
+## Task 
 
 
 
