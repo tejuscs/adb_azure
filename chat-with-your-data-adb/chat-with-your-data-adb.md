@@ -3,126 +3,176 @@
 
 ## Introduction
 
-This lab walks you through the steps to get started using the Oracle Autonomous Database@Azure. You will provision a new database.
+In this lab, you will learn how to use Autonomous Database Select AI (Select AI) to query your data using natural language; you don't need prior knowledge of the data structure or how that data is accessed.
 
-Estimated Time: 10 minutes
+What is Natural Language Processing?
+Natural language processing is the ability of a computer application to understand human language as it is spoken and written. It is a component of artificial intelligence (AI).
+
+What is Generative AI?
+Generative AI enables users to quickly generate new content based on a variety of inputs. Inputs and outputs to these models can include text, images, sounds, animation, 3D models, and other types of data.
+
+Estimated Time: 20 minutes
 
 ### Objectives
 
-As a database user, DBA or application developer:
+1. Configure your Autonomous Database to leverage a generative AI model for querying data using natural language
+2. Use Select AI to query data using natural language
 
-1. Rapidly deploy autonomous transaction processing databases.
+Oracle MovieStream Business Scenario
+
+The lab's business scenario is based on Oracle MovieStream - a fictitious movie streaming service that is similar to services to which you currently subscribe. You'll be able to ask questions about movies, customers who watch movies, and the movies they decide to watch.
 
 ### Required Artifacts
 
-- An Azure account with a pre-configured Resource Group and Virutal Network.
+- An Azure account with a pre-provisioned Autonomous Database and Azure OpenAI.
+- You have imported the data from the sample data pump file (Refer to Lab 3: Migrate to ADB using Data pump)
 
-## Task 1: Create an Autonomous Transaction Processing Database
+## Task 1: Integrate Azure OpenAI with Autonomous Database
 
-In this section you will be provisioning Autonomous database using the Azure cloud console.
+Autonomous Database supports models from OCI Generative AI, Azure OpenAI, OpenAI, and Cohere. This workshop will use the Azure OpenAI model.
 
-1.	Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on Oracle Database@Azure.
-
-
-    ![This image shows the result of performing the above step.](./images/oracledb.png " ")
-
--  Click **Oracle Autonomous Database Service** from the menu.
-
-    ![This image shows the result of performing the above step.](./images/adb.png " ")
-
-- Click **Create** in Oracle Autonomous Database Service details page.
-
-    ![This image shows the result of performing the above step.](./images/createadb.png " ")
+1.	Login to your Microsost Windows Virtual machine and open Visual studio with Autonomous Database.
 
 
--  This will bring up the **Create Oracle Autonomous Database** screen where you specify the configuration of the instance.
+    ![This image shows the result of performing the above step.](./images/vs1.png " ")
 
-- Select the **Subscription**, **Resource Group**, and enter Instance **Name** and  pick the **Region** and click Next.
+-  Right click on your Database connection and clone the connection to add ***moviestream*** user connection.
 
-    ![This image shows the result of performing the above step.](./images/basics.png " ")
+- Enter the connection name, Username and password and click ***Save***.
 
-    *For this lab, we will be using the following Subscription: **TBD** Resource Group: **TBD** Region: **East US** .*
+    ![This image shows the result of performing the above step.](./images/clone.png " ")
 
--  Enter the details in the **Configuration** page.
+    ![This image shows the result of performing the above step.](./images/moviestream.png " ") 
 
-    *NOTE: Autonomous Database supports different workload types, including: Data Warehouse and Transaction Processing. Both of these workload types provide performance improvements and additional features that support operations for the specified workload. [Learn More](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/about-autonomous-database-workloads.html#GUID-E1C8C5F2-22FB-4225-A3B9-9E78277A5834)*
+- Right click on the connection (Admin) again and Open SQL Worksheet in Oracle Autonomous Database Service details page.
 
--  Select **Transaction Processing** under **Workload typ** dropdown.
+    ![This image shows the result of performing the above step.](./images/admin.png " ")
+
+
+***Note: You will be executing the below sql queries as ***Admin*** user***
+
+***Create an AI Profile for OCI Generative AI***
+
+- A Select AI profile encapsulates connection information for an AI provider. This includes:
+1. A security credential (e.g. the resource principal)
+2. The name of the provider
+3. The name of the LLM (optional)
+4. A list of target tables that will be used for natural language queries (required when using NL2SQL) You can create as many profiles as you need, which is useful when comparing the quality of the results of different models.
+
+For a complete list of the Select AI profile attributes, see the [DBMS_CLOUD_AI_Package](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/dbms-cloud-ai-package.html#GUID-D51B04DE-233B-48A2-BBFA-3AAB18D8C35C) in the Using Oracle Autonomous Database Serverless documentation.
+
+-  Define the variables (Run the below as Admin user). [Get your Azure API key from here](https://tjdatapump.blob.core.windows.net/holcontainer/secret.txt)
+
+    ```
+    select * from user_cloud_ai_profiles;
+    define username='moviestream';
+    define profileName='gpt4o';
+    define credentialName='azure_cred40';
+    define endpoint='holopenai.openai.azure.com';
+    define azureResource='holopenai';
+    define azureDeployment='adb-hol';
+    define secret='Azure API key';
+    ```
     
-    ![This image shows the result of performing the above step.](./images/transaction.png " ")
+    ![This image shows the result of performing the above step.](./images/variable.png " ")
 
-- Under **Database configuration** enter the following details.
+- As ADMIN, you will open up the azure openai endpoint so that ***moviestream*** user can make connections to it.
  
-     *Database Version: 19c
-     ECPU count: 2
-     Compute auto scaling: Disabled
-     Storage: 1024 GB
-     Storage auto scaling: Disabled*
+     ```
+     BEGIN                                                                          
+    DBMS_NETWORK_ACL_ADMIN.APPEND_HOST_ACE(                                      
+       host => '&endpoint',
+       ace  => xs$ace_type(privilege_list => xs$name_list('http'),             
+                           principal_name => '&username',                          
+                           principal_type => xs_acl.ptype_db)                 
+        );                                                                            
+    END;                                                                           
+    /
+    ```  
 
-    ![This image shows the result of performing the above step.](./images/config.png " ")
+    ![This image shows the result of performing the above step.](./images/variable2.png " ")
 
 
--  Under **Backup retention** select the Backup retention period in days.
-    
-    *For this lab, we will select 1 day as Backup retention period.*
+- Now log in as the ***moviestream*** that will be using generative AI.
+Create a credential that allows the user to access the Azure OpenAI endpoint
 
-    ![This image shows the result of performing the above step.](./images/backup.png " ")
+***NOTE: Note: the MOVIESTREAM user was created as part of the setup and tables that were created in that schema. Moviestream password ***'watchS0meMovies#'***.***
 
--  Under **Administrator credentials** enter the Admin password.
+-  Right click on ***moviestream*** connection in your Visual Studio and Open SQL Worksheet. 
 
-    *For this lab, we will be using the following as a password.*
+    ![This image shows the result of performing the above step.](./images/mssql.png " ")
+
+***Note: Please enter the Secret key that you downloaded earlier in the Lab.***
 
     ```
-    <copy>
-    WElcome_123#
-    </copy>
+    define username='moviestream';
+    define profileName='gpt4o';
+    define credentialName='azure_cred40';
+    define endpoint='holopenai.openai.azure.com';
+    define azureResource='holopenai';
+    define azureDeployment='adb-hol';
+    define secret='Azure API key';
+
+    BEGIN                                                                          
+    dbms_cloud.create_credential(                                                 
+   credential_name => '&credentialName',                                            
+   username => 'AZURE_OPENAI',                                                 
+   password => '&secret');                            
+    END;                                                                           
+    /
     ```
 
-    ![This image shows the result of performing the above step.](./images/password.png " ")
+![This image shows the result of performing the above step.](./images/mssql1.png " ")
 
 
-- Select the  **License typ** as **TBD**.
+-  Create an AI profile for the Azure OpenAI model. Copy and paste the following code into your SQL Worksheet, and then click the Run Script icon..
 
-    ![This image shows the result of performing the above step.](./images/license.png " ")
-
--  Click **Advanced options** to view or change **Character set** and **National character set** and click **Next**.
-
-    *For this lab, we will use the default settings.*
-
-    ![This image shows the result of performing the above step.](./images/char.png " ")
-
-
-- Enter the **Networking** configurations.
-
-- Select the following under **Network access**
-    *Note: TLS connections allow you to connect to your Autonomous Database without a wallet, if you use a JDBC thin driver with JDK8 or above. TLS connections require you to use an access control list (ACL) or private endpoint.*
-
-- For the lab, we select the following and click Next. 
-
-    *Access typs: Managed private virtual network IP only
-    Required mutual TLS (mTLS) authentication: Disabled
-    Virtual network: TBD
-    Subnet: TBD*
-
-    ![This image shows the result of performing the above step.](./images/network.png " ")
-    
-
-- Under **Maintenance** select the **Maintenance patch level** and enter **Maintenance contact emails** and click Next.
-    
-    ![This image shows the result of performing the above step.](./images/maintenance.png " ")
-
-- Agree to the terma of services and click Next.
-
-    ![This image shows the result of performing the above step.](./images/agree.png " ")
-
-- Attach Tags if required and click Next.
-
-    ![This image shows the result of performing the above step.](./images/tags.png " ")
+```
+    begin
+  -- recreate the profile
+  dbms_cloud_ai.drop_profile(
+    profile_name => '&profileName',
+    force => true
+    );
 
 
-- Review the configurations and clic Create.
+  dbms_cloud_ai.create_profile(
+    profile_name => '&profileName',
+    attributes =>       
+        '{"provider": "azure",        
+          "azure_resource_name": "&azureResource",                    
+          "azure_deployment_name": "&azureDeployment",
+          "credential_name": "&credentialName",
+          "comments":"true",          
+          "object_list": [
+            {"owner": "&username", "name": "GENRE"},
+            {"owner": "&username", "name": "CUSTOMER"},
+            {"owner": "&username", "name": "PIZZA_SHOP"},
+            {"owner": "&username", "name": "STREAMS"},
+            {"owner": "&username", "name": "MOVIES"},
+            {"owner": "&username", "name": "ACTORS"}
+          ]          
+          }'
+    );
+  end;
+  /
+```
 
-    ![This image shows the result of performing the above step.](./images/review.png " ")
+![This image shows the result of performing the above step.](./images/mssql2.png " ")
+
+
+## Task 2: Test the AI profile
+
+- We will use the PL/SQL API to generate a response from the Cohere model. This example is using the chat action. It is not using any private data coming from your database.
+
+1. Test the LLM and learn about Autonomous Database as the MOVIESTREAM user. Copy and paste the following code into your SQL Worksheet, and then click the Run Script icon.
+
+```
+select ai chat what is autonomous database;
+```
+
+
+
 
 
 You may now **proceed to the next lab**.
