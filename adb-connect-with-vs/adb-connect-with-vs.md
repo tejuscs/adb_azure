@@ -1,9 +1,11 @@
 # Configure a development system for use with your Autonomous database
 
 ## Introduction
-The Oracle Linux Cloud Developer image provides the latest development tools, languages, and Oracle Cloud Infrastructure Software Development Kits (SDKs) to rapidly deploy a comprehensive development environment. You can use the command line and GUI tools to write, debug, and run code in various languages, and develop modern applications on Oracle Cloud Infrastructure. As an application developer you can now provision a developer image within minutes and connect it to your dedicated or serverless database deployment.
 
-The image is pre-configured with tools and so that you can configure a secure connection using Visual Studio and SQLCL.
+This Lab walks you through on how to connect Visual Studio with Autonomous Database. 
+
+The Windows Virtual machine provided for the workshop s pre-configured with Visual Studio and any extensions required. RDP into the Windows Virutal Machine to connect VS with Autonomous Database.
+
 
 Estimated Time: 30 minutes
 
@@ -36,9 +38,14 @@ As a database user, DBA or application developer,
 
     ![This image shows the result of performing the above step.](./images/addpc.png " ")
 
-- Paste the IP address and connect to a User and add the connection..
+- Click on Add PC and paste the Public IP address and add a User.
 
-- User account: Add user accoutn User: ***opc*** Passwor: ***WElcome_123#***.
+- User account: 
+
+    ```
+    Add user accoutn User: opc
+    Password: WElcome_123#
+    ```
     
     ![This image shows the result of performing the above step.](./images/addpd2.png " ")
 
@@ -98,7 +105,9 @@ As a database user, DBA or application developer,
 
     ![This image shows the result of performing the above step.](./images/sqlcl.png " ")
 
-- SQLcl Terminal is opened and connected to your Autonomous Datbaase. Test the connectivity: 
+- SQLcl Terminal is opened and connected to your Autonomous Datbaase. 
+
+- Test the connectivity: 
 
     ```
     select * from dual;
