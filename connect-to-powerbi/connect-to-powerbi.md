@@ -44,6 +44,8 @@ As a developer or DBA:
 
   2. Click **Get Data** and select **More** at the bottom of the list
 
+    
+  ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
     ![Get Data - More](./images/03-get-data-more.png " ")
 
   3. Select **Database** on the left side menu
