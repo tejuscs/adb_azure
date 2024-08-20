@@ -42,7 +42,7 @@ As a developer or DBA:
 
   1. Open Power BI Desktop
 
-  2. Click **Get Data** and select **More...** at the bottom of the list
+  2. Click **Get Data** and select **More** at the bottom of the list
 
     ![Get Data - More](./images/03-get-data-more.png " ")
 
