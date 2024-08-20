@@ -48,22 +48,6 @@
             "filename": "./../../connect-to-swingbech-app/connect-to-swingbech-app.md"
         },
         {
-            "title": "Lab 5: Monitor ADB using Monitor Metrics",
-            "description": "Monitor your Autonomous Database using Monitor Metrics",
-            "partnumber": "Ennnnn_01",
-            "publisheddate": "07/25/2024",
-            "contentid": "12nnnn",
-            "filename": "./../../monitor-adb-using-monitor-metrics/monitor-adb-using-monitor-metrics.md"
-        },
-        {
-            "title": "Lab 6: Manage Database Performance",
-            "description": "Manage Autonomous Database Performance with Performance Hub",
-            "partnumber": "Ennnnn_01",
-            "publisheddate": "07/25/2024",
-            "contentid": "12nnnn",
-            "filename": "./../../manage-database-performance/manage-database-performance.md"
-        },
-        {
             "title": "Lab 7: Connect PowerBI with ADB",
             "description": "Connect PowerBI with Autonomous Database",
             "partnumber": "Ennnnn_01",
