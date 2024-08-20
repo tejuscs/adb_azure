@@ -1,7 +1,7 @@
 # Workshop Introduction and Overview
 
 ## Introduction to Oracle Autonomous Database@Azure
-The ADB@Azure HOL is for Cloud Architects, Multicloud Architects, and Database Administrators. You'll learn to&nbsp;integrate Autonomous Database service into Microsoft Azure with ADB@Azure. Covering key topics like use cases, architecture, provisioning, and management, the course provides hands-on overview of ADB@Azure.
+The ADB@Azure HOL is for Cloud Architects, Multicloud Architects, and Database Administrators. You'll learn to integrate Autonomous Database service into Microsoft Azure with ADB@Azure. Covering key topics like use cases, architecture, provisioning, and management, the course provides hands-on overview of ADB@Azure.
 
 Watch the video below for an overview of Autonomous Database@Azure.
 
@@ -33,6 +33,7 @@ Find more details on getting started [here](https://docs.oracle.com/en-us/iaas/C
 * Lab 5: Monitor ADB using Monitor Metrics
 * Lab 6: Manage Database Performance
 * Lab 7: Connect PowerBI with ADB
+* Lab 8: Chat with your data usin Generative AI
 
 Please proceed to the next lab.
 
