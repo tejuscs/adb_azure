@@ -22,6 +22,9 @@ As a developer or DBA:
 - A pre-provisioned Autonomous Database with admin access.
 - A pre-provisioned developer client machine with network access to the database.
 
+
+<!-- Start your tasks here. Tasks must begin with a heading 2 (##). Create as many task sections as needed. -->
+
 ## Task 1: Verify that Power BI Desktop is installed in your Virtual Machine
 
 1. Open Power BI
@@ -35,6 +38,8 @@ As a developer or DBA:
 
 ## Task 2: Verify that the Oracle Client for Microsoft Tools is installed
 
+Ensure that the Oracle Client for Microsoft Tools is installed on the virtual machine you are using for this lab
+
 - Look in the directory
 
 - Run command 
@@ -44,17 +49,15 @@ As a developer or DBA:
 
   1. Open Power BI Desktop
 
-    ![Report Genererated](./images/05-report-generated.png " ")
-
   2. Click **Get Data** and select **More** at the bottom of the list
 
-    ![Get Data](./images/03-get-data-more.png " ")
+  ![Get Data](./images/03-get-data-more.png " ")
 
   3. Select **Database** on the left side menu
 
   4. Select **Oracle database** from the list
 
-    ![Select Oracle Database](./images/03-database-oracle.png " ")
+  ![Select Oracle Database](./images/03-database-oracle.png " ")
 
   5. Enter the **Server** in the following format:
 
@@ -68,7 +71,7 @@ As a developer or DBA:
 
   9. Enter **User name** and **Password**
 
-    ![Enter Credentials](./images/03-db-credentials-use-alternate.png " ")
+  ![Enter Credentials](./images/03-db-credentials-use-alternate.png " ")
 
   10. Click **Connect**
 
@@ -77,11 +80,11 @@ As a developer or DBA:
 
   1. Select the **data** build your Microsoft Power BI Desktop report by checking column names within each database table
 
-    ![Select Data](./images/04-data-selection.png " ")
+  ![Select Data](./images/04-data-selection.png " ")
 
   2. Select your desired **Visualization** (table) by examining option under **Visualizations** 
 
-    ![Select Visualization](./images/04-Visualizations.png " ")
+  ![Select Visualization](./images/04-Visualizations.png " ")
 
 ## Task 5 Review your generated report and adjust properties as needed
 
