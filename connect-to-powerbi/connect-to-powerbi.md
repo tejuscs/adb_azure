@@ -34,9 +34,9 @@ As a developer or DBA:
 
 ## Task 2: Verify that the Oracle Client for Microsoft Tools is installed
 
-- Look in the ... directory
+- Look in the directory
 
-- Run command ...
+- Run command 
 
 ## Task 3: Set up a connection to an Autonomous database
 
