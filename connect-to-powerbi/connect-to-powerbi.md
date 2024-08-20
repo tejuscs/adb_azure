@@ -1,11 +1,11 @@
 # Connecting to an Oracle Database in Oracle Database@Azure from Power BI Desktop
 
 ## Introduction
-Power BI Desktop is ...
+Power BI Desktop is is a free application you install on your designated Windows machines that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data to build visuals, and collections of visuals you can share as reports.
 
-Oracle Database@Azure is ...
+Oracle Database@Azure is an Oracle and Microsoft partnership solution that delivers Oracle database services running on Oracle Cloud Infrastructure (OCI), collocated in Microsoft Azure data centers. Azure customers can now procure, deploy, and use Oracle database services running on OCI within the native Azure portal and APIs, giving them an OCI-in-Azure-like experience. 
 
-This lab allows you to connect Power BI Desktop to an Oracle Database in Oracle Database@Azure from Power BI Desktop to retrieve data and generate reports
+This lab allows you to connect Power BI Desktop to an Oracle Database in Oracle Database@Azure to retrieve data and generate reports.
 
 Estimated Time: 10-15 minutes
 
@@ -24,11 +24,12 @@ As a developer or DBA:
 
 ## Task 1: Verify that Power BI Desktop is installed in your Virtual Machine
 
-- Open Power BI
+1. Open Power BI
 
-- Click File -> About
+2. Click File -> About
 
-- Verify it is the 64-bit version
+3. Verify it is the 64-bit version
+
   ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
 
 ## Task 2: Verify that the Oracle Client for Microsoft Tools is installed
@@ -37,28 +38,49 @@ As a developer or DBA:
 
 - Run command ...
 
-## Task 3: Connect to an Exadata database
+## Task 3: Set up a connection to an Autonomous database
 
-- Open Power BI Desktop
+  1. Open Power BI Desktop
 
-- Click **Get Data** and select **More...** at the bottom of the list
+  2. Click **Get Data** and select **More...** at the bottom of the list
 
-- Select **Database** on the left side menu
+    ![Get Data - More](./images/03-get-data-more.png " ")
 
-- Select **Oracle database** from the list
+  3. Select **Database** on the left side menu
 
-- Click **Connect**
+  4. Select **Oracle database** from the list
 
-## Task 
+    ![Select Oracle Database](./images/03-database-oracle.png " ")
 
+  5. Enter the **Server** in the following format:
 
-## Task 
+    `oracle-data-server-name:port-number/service-name`
 
-## Task 
+  6. Check the **DirectQuery** radio button
+    
+  7. Click **OK**.
 
+  8. Check the **Use alternate credentials** radio button
 
-## Task 
+  9. Enter **User name** and **Password**
 
+    ![Enter Credentials](./images/03-db-credentials-use-alternate.png " ")
+
+  10. Click **Connect**
+
+## Task 4 Build your report
+
+  1. Select the **data** build your Microsoft Power BI Desktop report by checking column names within each database table
+
+    ![Select Data](./images/04-data-selection.png " ")
+
+  2. Select your desired **Visualization** (table) by examining option under **Visualizations** 
+
+    ![Select Visualization](./images/04-Visualizations.png " ")
+
+## Task 5 Review your generated report and adjust properties as needed
+
+  ![Report Genererated](./images/05-report-generated.png " ")
 
 
 ## References
