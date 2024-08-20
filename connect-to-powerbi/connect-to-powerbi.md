@@ -1,4 +1,4 @@
-# Connecting to an Oracle Database in Oracle Database@Azure from Power BI Desktop
+# Connecting Power BI Desktop to an Oracle Autonomous Database in Oracle Database@Azure 
 
 ## Introduction
 Power BI Desktop is is a free application you install on your designated Windows machines that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data to build visuals, and collections of visuals you can share as reports.
