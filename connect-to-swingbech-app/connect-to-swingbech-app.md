@@ -55,7 +55,51 @@ Now that you have installed swingbench, the next step is to connet the applicati
 
 - You are ready to run Swingbench workloads on Autonomous database. Workloads are simulated by users submitting transactions to the database.
 
-- To start the Swingbench UI, open CMD in your Windows instance and navigate to Swingbench winbin folder.
+- Load sample data to your Autonomous Database. To start oewizard to load Schema and data, navigate to Swinbench winbin folder and run oewizard.bat.
+
+    ```
+    cd C:\Users\opc\Downloads\swingbenchlatest\swingbench\winbin
+    ```
+    ```
+    oewizard.bat
+    ```
+
+    ![This image shows the result of performing the above step.](./images/oewizard.png " ")
+
+- Click Next and select Version 2.0.
+
+    ![This image shows the result of performing the above step.](./images/oewizard1.png " ")
+
+- Select Create the Order Entry Schema and click Next.
+
+    ![This image shows the result of performing the above step.](./images/oewizard2.png " ")
+
+- Copy the Connect string from Azure portal, and change the Username to ***Admin*** and enter your Admin password and click Next. 
+
+    ![This image shows the result of performing the above step.](./images/connectstring.png " ")
+
+    ![This image shows the result of performing the above step.](./images/oewizard3.png " ")
+
+- Change the password to ***WElcome_123#*** and keep the remaing default and click Next.
+
+    ![This image shows the result of performing the above step.](./images/oewizard4.png " ")
+
+- Keep Database Options as default and click Next. 
+
+    ![This image shows the result of performing the above step.](./images/oewizard5.png " ")
+
+- Change User defined scale to ***0.1 GB*** and click Next and Finish. 
+
+    ![This image shows the result of performing the above step.](./images/oewizard6.png " ")
+
+- Building the simple order entry schema should be done in a few mins. 
+
+    ![This image shows the result of performing the above step.](./images/oewizard7.png " ")
+
+    ![This image shows the result of performing the above step.](./images/oewizard8.png " ")
+
+
+- Once the Schema is created, start the Swingbench UI. Open CMD in your Windows instance and navigate to Swingbench winbin folder.
 
     ```
     <copy>
@@ -98,11 +142,28 @@ Now that you have installed swingbench, the next step is to connet the applicati
 
     ![This image shows the result of performing the above step.](./images/start1.png " ")
 
+***NOTE: Do not disconnect the swingbench application. The next steps shows the Auto scaling capability of Autonomous Database.***
+
+## Task 3: Enable Compute Auto Scaling in you Autonomous database
+
+- Login to Azure portal and navigate to your Autonomous database overview page and expand ***Settings*** and click on ***Resource allocation*** and ***Manage***.
+
+    ![This image shows the result of performing the above step.](./images/auto.png " ")
+
+- Check on ***Compute auto scaling*** and click Apply.
+
+    ![This image shows the result of performing the above step.](./images/auto1.png " ")
+
+- Open Swingbench application and notice how your Transactions per minute is increasing on enabling Auto scaling. 
+
+    ![This image shows the result of performing the above step.](./images/auto2.png " ")
+
+- Navigate back to Azure portal and turn off Auto Scaling. 
 
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
-*Congratulations! You successfully configured the swingbench java application with Autonomous database.*
+*Congratulations! You successfully configured the swingbench java application with Autonomous database and observed how compute auto scaling can benfit your applications .*
 
 - **Author** - Tejus Subrahmanya
 - **Last Updated By/Date** - Tejus Subrahmanya, Autonomous Database Product Management, August 2024
