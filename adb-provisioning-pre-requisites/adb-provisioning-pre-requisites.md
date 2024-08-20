@@ -3,9 +3,8 @@
 
 ## Introduction
 
-This lab walks you through the steps to get started using the Oracle Autonomous Database@Azure. 
+This lab walks you through the pre-requisites to get started with Autonomous Database@Azure. This involves creating a Resource Group, Vnet and adding subnet that needs to be delegated for the Oracle Database@Azure service.
 
-Pre-requisites before provisioning Autonomous Database@Azure.
 
 Estimated Time: 20 minutes
 
@@ -54,6 +53,8 @@ In this section, you will create a resource group and VNet as a pre-requisite st
 ## Task 2:  Create Virtual Network (VNet)
 1. Navigate to ‘Azure Services’ and select Virtual networks. Then click on Create button
 
+    ![](./images/vnet1.png " ")
+
 2.	Create Virtual Network page will appear. Provide all required details as shown in below screenshot for each tab
     
     Project Details:
@@ -64,6 +65,8 @@ In this section, you will create a resource group and VNet as a pre-requisite st
     * **Virtual network name**
     * **Region**
 
+    ![](./images/vnet2.png " ")
+
      Security
     * **Virtual Network encryption:** Select Virtual Network Encryption checkbox to enable the encryption of the traffic traveling within the VNet
 
@@ -71,8 +74,12 @@ In this section, you will create a resource group and VNet as a pre-requisite st
 
     * **Azure Firewall:** Similar to traffic encryption and Bastian service, you can enable the Azure Firewall if required.
 
+    ![](./images/vnet3.png " ")
+
     * **IP Addresses:** There is an option to choose IPV4/IPV6 addresses for your network resources. 
     Select default IP Address range or provide new Ip range based on the requirement. Here we are using default IP range for IP addresses as shown in below screenshot.
+
+    ![](./images/vnet4.png " ")
 
     Tags
     
@@ -80,14 +87,37 @@ In this section, you will create a resource group and VNet as a pre-requisite st
     * **Name**
     * **Value**
 
+    ![](./images/vnet5.png " ")
+
     On * **Review + create page**, it will validate the inputs provided in previous steps. Once Validation is passed, it will create virtual network.
+
+    ![](./images/vnet6.png " ")
 
     Deployment can be monitored as below.
 
     Once all required resources are created for virtual network, deployment status will get changed to * **‘Complete’**.
 
+    ![](./images/vnet7.png " ")
+
     Navigate to **Virtual Network** and search for the name of the VNet created to see details about the virtual cloud network.
 
+## Task 3: Add Subnet and Delegate to Oracle Database@Azure Service
+
+- Select VNet created in Task 2 and click on ‘Add a subnet'. It will open a page to provide inputs.
+
+    ![](./images/subnet1.png " ")
+
+- Provide name for the subnet to be created and then select Ip address range based on the size of network required for the deployment.
+
+    ![](./images/subnet2.png " ")
+
+- You need to delegate this subnet to Oracle Database @Azure service. Under Subnet Delegation option, select Oracle.Database/networkAttachments from the drop down list.
+
+    ![](./images/subnet3.png " ")
+
+- Click on Add button to add this subnet to the VNet.
+
+    ![](./images/subnet4.png " ")
 
 You may now **proceed to the next lab** to provision Autonomous Database@Azure.
 
