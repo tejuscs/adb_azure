@@ -46,26 +46,29 @@ As a developer or DBA:
 
   2. Click **Get Data** and select **More** at the bottom of the list
 
+    ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
     ![Get Data](./images/03-get-data-more.png " ")
 
   3. Select **Database** on the left side menu
 
   4. Select **Oracle database** from the list
 
+    ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
     ![Select Oracle Database](./images/03-database-oracle.png " ")
 
   5. Enter the **Server** in the following format:
 
-    oracle-data-server-name:port-number/service-name
+    oracle-database-server-name:port-number/service-name
 
   6. Check the **DirectQuery** radio button
     
-  7. Click **OK**.
+  7. Click **OK**
 
   8. Check the **Use alternate credentials** radio button
 
   9. Enter **User name** and **Password**
 
+    ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
     ![Enter Credentials](./images/03-db-credentials-use-alternate.png " ")
 
   10. Click **Connect**
