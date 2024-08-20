@@ -29,24 +29,26 @@ As a database admin or user:
 - On the Storage accounts details page, scroll down and click on **tjdatapump**.
     ![This image shows the result of performing the above step.](./images/storage2.png " ")
 
-- On the **tjdatapump** details page, click and epand Security+Network and click on ***Access Key***.
+- On the **tjdatapump** details page, click and expand Security+Network and click on ***Access Key***.
     ![This image shows the result of performing the above step.](./images/storage3.png " ")
 
-- Copy the value under ***key** and save it on a notepad.
+- Copy the **key** and save it in a notepad.
 
     ![This image shows the result of performing the above step.](./images/storage4.png " ")
 
-## Task 2: Set up Object Store user credentials in your target autonomous database
+## Task 2: Set up User credentials in your target autonomous database
 
 - Now that we have the credentials token, let's set up the target database to read from the Azure Storage and import data.
 
-- Log into your Autonomous database as admin using either SQL Developer or SQLCL client.
+- Log into your Autonomous database as admin using either SQL Developer or SQLcl client.
 
-You may RDP to a developer client image provided. Once logged into your developer client, you may then launch Visual Studio code as discussed in an earlier lab and connect to your database.
+RDP to your developer client image provided. Once logged into your developer client, launch Visual Studio code as discussed in an earlier lab and connect to your database.
 
 Here, we will use SQLcl to demonstrate the steps needed to set up Azure store credentials.
 
-- Once connected to your autonomous database as user ***admin***, run the following pl/sql procedure, replacing username and password with your own cloud credentials.
+- Once connected to your autonomous database as ***admin*** user, run the following pl/sql procedure, replacing username and password with your own cloud credentials.
+
+NOTE: For this lab you will use the following credentials:
 
     ```
     <copy>
@@ -82,7 +84,7 @@ Here, we will use SQLcl to demonstrate the steps needed to set up Azure store cr
     ```
     <copy>
     datapump import -
-    -schemas SOE,MOVIESTREAM -
+    -schemas MOVIESTREAM -
     -directory data_pump_dir -
     -credential AZURE_CRED_NAME -
     -remaptablespaces USERS=DATA -
@@ -93,20 +95,18 @@ Here, we will use SQLcl to demonstrate the steps needed to set up Azure store cr
 
     ![This image shows the result of performing the above step.](./images/import.png " ")
 
-- If all goes well, your import will complete in a minute as shown below. Ignore the below statement.
-
-    *ORA-39082: Object type PACKAGE BODY:"SOE"."ORDERENTRY" created with compilation warnings*
+- Your import will complete in a few minutes as shown below.
 
     
     ![This image shows the result of performing the above step.](./images/import1.png " ")
 
-All Done! Your application schemas ware successfully imported.
+All Done! Your application schema was successfully imported.
 
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Congratulations! You have successfully completed migration of an Oracle database to the Autonomous database.*
+*Congratulations! You have successfully completed migrating an Oracle database to the Autonomous database.*
 
 - **Author** - Tejus Subrahmanya
 - **Last Updated By/Date** - Tejus Subrahmanya, August 2024
