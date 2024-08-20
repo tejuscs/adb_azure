@@ -32,11 +32,13 @@ As a developer or DBA:
 
   ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
 
+
 ## Task 2: Verify that the Oracle Client for Microsoft Tools is installed
 
 - Look in the directory
 
 - Run command 
+
 
 ## Task 3: Set up a connection to an Autonomous database
 
@@ -54,7 +56,7 @@ As a developer or DBA:
 
   5. Enter the **Server** in the following format:
 
-    `oracle-data-server-name:port-number/service-name`
+    oracle-data-server-name:port-number/service-name
 
   6. Check the **DirectQuery** radio button
     
@@ -67,6 +69,7 @@ As a developer or DBA:
     ![Enter Credentials](./images/03-db-credentials-use-alternate.png " ")
 
   10. Click **Connect**
+
 
 ## Task 4 Build your report
 
