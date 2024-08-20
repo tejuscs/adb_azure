@@ -1,26 +1,24 @@
 # Connecting Power BI Desktop to an Oracle Autonomous Database in Oracle Database@Azure 
 
 ## Introduction
-Power BI Desktop is is a free application you install on your designated Windows machines that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data to build visuals, and collections of visuals you can share as reports.
+Power BI Desktop is is a free application you install on your Windows machines that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple sources of data to build visuals and collections of visuals you can share as reports.
 
 Oracle Database@Azure is an Oracle and Microsoft partnership solution that delivers Oracle database services running on Oracle Cloud Infrastructure (OCI), collocated in Microsoft Azure data centers. Azure customers can now procure, deploy, and use Oracle database services running on OCI within the native Azure portal and APIs, giving them an OCI-in-Azure-like experience. 
 
-This lab allows you to connect Power BI Desktop to an Oracle Database in Oracle Database@Azure to retrieve data and generate reports.
+This lab allows you to connect Power BI Desktop to an Oracle Database in Oracle Database@Azure to visualize data and generate reports.
 
 Estimated Time: 10-15 minutes
 
 ### Objectives
 
-As a developer or DBA:
+1. Use Microsft Power BI Desktop to retrieve data from an Autonomous Database in Oracle Database@Azure.
+2. Configure Power BI to querry an Antuonomous database schema.
+3. Generate a Power BI Desktop report.
 
-1. Access the OCI Autonomous Database console and get the URL for the Database Actions console.
-2. Create a VNC connection to the developer client VM and access the Database Actions console.
-3. Access Performance Hub for your Autonomous Database instance.
-
-### Required Artifacts
-- An Oracle Cloud Infrastructure account with access to Autonomous Transaction Processing console.
+### Prerequisites
+- Access to Oracle Database@Azure via an active Azure subscription and an OCI tenancy
 - A pre-provisioned Autonomous Database with admin access.
-- A pre-provisioned developer client machine with network access to the database.
+- A pre-provisioned Azure Windows virtual machine with network access to the database.
 
 
 <!-- Start your tasks here. Tasks must begin with a heading 2 (##). Create as many task sections as needed. -->
@@ -103,7 +101,7 @@ You may now **proceed to the next lab**.
 *Fantastic! You successfully learned to use the Database Actions Console and Performance Hub on your Autonomous Database instance.*
 
 - **Author** - Anwar Belayachi
-- **Last Updated By/Date** - August 14, 2024
+- **Last Updated By/Date** - August 20, 2024
 
 
 ## See an issue or have feedback?  
