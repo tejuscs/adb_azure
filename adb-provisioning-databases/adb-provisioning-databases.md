@@ -52,13 +52,13 @@ In this section you will be provisioning Autonomous database using the Azure clo
     ![This image shows the result of performing the above step.](./images/transaction.png " ")
 
 - Under **Database configuration** enter the following details.
- 
-     *Database Version: 19c
+    ```
+     Database Version: 19c
      ECPU count: 2
      Compute auto scaling: Disabled
      Storage: 1024 GB
-     Storage auto scaling: Disabled*
-
+     Storage auto scaling: Disabled
+    ```
     ![This image shows the result of performing the above step.](./images/config.png " ")
 
 
@@ -78,9 +78,6 @@ In this section you will be provisioning Autonomous database using the Azure clo
     </copy>
     ```
 
-    ![This image shows the result of performing the above step.](./images/password.png " ")
-
-
 - Select the  **License typ** as **TBD**.
 
     ![This image shows the result of performing the above step.](./images/license.png " ")
@@ -95,15 +92,17 @@ In this section you will be provisioning Autonomous database using the Azure clo
 - Enter the **Networking** configurations.
 
 - Select the following under **Network access**
+    
     *Note: TLS connections allow you to connect to your Autonomous Database without a wallet, if you use a JDBC thin driver with JDK8 or above. TLS connections require you to use an access control list (ACL) or private endpoint.*
 
 - For the lab, we select the following and click Next. 
 
-    *Access typs: Managed private virtual network IP only
+    ```
+    Access typs: Managed private virtual network IP only
     Required mutual TLS (mTLS) authentication: Disabled
     Virtual network: TBD
-    Subnet: TBD*
-
+    Subnet: TBD
+    ```
     ![This image shows the result of performing the above step.](./images/network.png " ")
     
 
@@ -111,16 +110,16 @@ In this section you will be provisioning Autonomous database using the Azure clo
     
     ![This image shows the result of performing the above step.](./images/maintenance.png " ")
 
-- Agree to the terma of services and click Next.
+- Agree to the terms of services and click Next.
 
     ![This image shows the result of performing the above step.](./images/agree.png " ")
 
-- Attach Tags if required and click Next.
+- Add Tags if required and click Next.
 
     ![This image shows the result of performing the above step.](./images/tags.png " ")
 
 
-- Review the configurations and clic Create.
+- Review the configurations and click Create.
 
     ![This image shows the result of performing the above step.](./images/review.png " ")
 
