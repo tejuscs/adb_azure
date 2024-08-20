@@ -40,9 +40,9 @@ As a developer or DBA:
 
 Ensure that the Oracle Client for Microsoft Tools is installed on the virtual machine you are using for this lab
 
-- Look in the directory
+- Verify that the following directory with its subfolders and files exist
 
-- Run command 
+![Get Data](./images/02-oracle-client.png " ")
 
 
 ## Task 3: Set up a connection to an Autonomous database
