@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab we will install and configure a workload generation tool called Swingbench.
+This lab walks you thorugh how to installat and configure a workload generation tool called Swingbench and monitor the performance of Autonomous Database.
 
 Estimated Time: 10 minutes
 
@@ -10,11 +10,14 @@ Estimated Time: 10 minutes
 
 As an administrator:
 1. Install and configure Swingbench to simulate a transaction processing workload.
+2. Enable Compute auto scaling in Autonomous Database and monitor the performance.
 
 
 ### Required Artifacts
 
-- A pre-provisioned instance of Autonomous database and Developer Client image. Refer to the Lab 2: **Connect securely with Visual Studio code**.
+- A pre-provisioned instance of Autonomous database and Developer Client image. 
+
+Refer to the Lab 2: **Connect securely with Visual Studio code**.
 
 ## Task 1: Download and install Swingbench
 
@@ -22,7 +25,7 @@ As an administrator:
 
 - Connect to your developer client machine via RDP. Detailed instructions are provided in that Lab 2: **Connect securely with Visual Studio code**.
 
-    *The remainder of this lab assumes you are connected to the Windows instance through RDP  and are operating from the Windows instance itself and not your local machine (except if noted).*
+    *The remainder of this lab assumes you are connected to the Windows instance through RDP  and are operating from the Windows instance and not your local machine (except if noted).*
 
 - Once connected, open a Microsft Edge browser and download the latest version of swingbench.
 
@@ -46,7 +49,7 @@ As an administrator:
 - Use on screen instructions to update drivers if needed, otherwise move on to transfer DB wallet.
 
 ### Transfer DB Wallet to swingbench client machine
-Unless you have already moved the wallet to your Dev Client machine in an earlier lab, follow the steps in Lab 2: **Connect securely with Visual Studio code**.
+If you have not downloaded the wallet already to your Dev Client machine in an earlier lab, follow the steps in Lab 2: **Connect securely with Visual Studio code** to download the wallet.
 
 
 ## Task 2: Connect swingbench application to Autonomous database
@@ -56,6 +59,8 @@ Now that you have installed swingbench, the next step is to connet the applicati
 - You are ready to run Swingbench workloads on Autonomous database. Workloads are simulated by users submitting transactions to the database.
 
 - Load sample data to your Autonomous Database. To start oewizard to load Schema and data, navigate to Swinbench winbin folder and run oewizard.bat.
+
+***NOTE: Linux users start oewizard from swingbench/bin folder.***
 
     ```
     cd C:\Users\opc\Downloads\swingbenchlatest\swingbench\winbin
@@ -120,11 +125,17 @@ Now that you have installed swingbench, the next step is to connet the applicati
 
 - Running the above command should open up the Swingbench configuration tool and select the following to connect Swingbench to Autonomous database. 
 
-- Select ***SOE_Server_Side_V2*** and click OK.
+- Select SOE_Server_Side_V2 and click OK.
 
     ![This image shows the result of performing the above step.](./images/swingbench1.png " ")
 
-- Enter ***Username*** as ***soe***, ***Password*** as ***WElcome_123#*** and Connect String can be copied from the Azure portal. 
+- Enter the following in Swingbench UI
+   
+    ```
+    Username: soe
+    Password: WElcome_123#
+    Connect String: <Copy from Azure portal>
+    ```
 
     ![This image shows the result of performing the above step.](./images/swingbench2.png " ")
 
