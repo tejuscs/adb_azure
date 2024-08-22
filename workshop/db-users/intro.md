@@ -28,7 +28,7 @@ Find more details on getting started [Onboarding with Oracle Database@Azure](htt
 * Lab 3: Migrate to ADB using Data Pump
 * Lab 4: Connect ADB with Swingbench application
 * Lab 5: Connect PowerBI with ADB
-* Lab 6: Chat with your data usin Generative AI
+* Lab 6: Chat with your data in ADB using Generative AI
 
 Please proceed to the next lab.
 
