@@ -57,7 +57,7 @@ As a database user, DBA or application developer,
 
 ## Task 2: Connect Autonomous Database with Visual Studio
 
-- To download Autonomous Database credential wallet, login to Azure portal from your Windows VM and navigate to Oracle Database@Azure and Oracle Autonomous Database Service to download the Autonomous Database Wallet.
+- To download Autonomous Database credential wallet, login to Azure portal from your Windows VM and navigate to Oracle Database@Azure and Oracle Autonomous Database Service.
 
     ![This image shows the result of performing the above step.](./images/adb1.png " ")
 
