@@ -17,7 +17,7 @@ As a database user, DBA or application developer:
 
 - An Azure account with a pre-configured Resource Group and Virtual Network.
 
-## Task 1: Create an Autonomous Database
+## Task 1: Create Autonomous Database@Azure
 
 In this section, you will be provisioning Autonomous database using the Azure cloud console.
 
