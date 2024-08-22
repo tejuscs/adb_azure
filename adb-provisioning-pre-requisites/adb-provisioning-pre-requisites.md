@@ -1,5 +1,5 @@
 
-# Pre-requisite to provision an Autonomous Transaction Processing Database@Azure
+# Get started - Autonomous Transaction Processing Database@Azure
 
 ## Introduction
 
@@ -128,6 +128,3 @@ You may now **proceed to the next lab** to provision Autonomous Database@Azure.
 - **Author** - Sanjay Rahane, Principal Cloud Architect, North America Cloud Engineering Services (CES)
 
 - **Last Updated By/Date** - Sanjay Rahane, July 2024
-
-## See an issue or have feedback?  
-Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!
