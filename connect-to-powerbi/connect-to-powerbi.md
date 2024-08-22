@@ -25,13 +25,13 @@ Estimated Time: 10-15 minutes
 
 ## Task 1: Verify that Power BI Desktop is installed in your Virtual Machine
 
-1. Open Power BI
+- Open Power BI
 
-2. Click File -> About
+- Click File -> About
 
-3. Verify it is the 64-bit version
+- Verify it is the 64-bit version
 
-  ![About Power BI Desktop](./images/01-PowerBI-version.png " ")
+  ![About Power BI Desktop](./images/powerbiversion.png " ")
 
 
 ## Task 2: Verify that the Oracle Client for Microsoft Tools is installed
@@ -40,53 +40,78 @@ Ensure that the Oracle Client for Microsoft Tools is installed on the virtual ma
 
 - Verify that the following directory with its subfolders and files exist
 
-![Get Data](./images/02-oracle-client.png " ")
+![Get Data](./images/oracleclient.png " ")
 
 
 ## Task 3: Set up a connection to an Autonomous database
 
-  1. Open Power BI Desktop
+  - Copy the downloaded Autonomous Database credentials zip file into a directory.
 
-  2. Click **Get Data** and select **More** at the bottom of the list
+    ```
+      C:\DATA\Wallet\
+    ```
+  
+     ![Get Data](./images/wallet1.png " ")
 
-  ![Get Data](./images/03-get-data-more.png " ")
+  - Unzip the wallet in the same directory.
 
-  3. Select **Database** on the left side menu
-
-  4. Select **Oracle database** from the list
-
-  ![Select Oracle Database](./images/03-database-oracle.png " ")
-
-  5. Enter the **Server** in the following format:
-
-    oracle-database-server-name:port-number/service-name
-
-  6. Check the **DirectQuery** radio button
+     ![Get Data](./images/wallet2.png " ")
     
-  7. Click **OK**
+  - Open the sqlnet.ora configuration file in the credentials directory in a text editor and set the DIRECTORY value to the ADB wallet directory location, such as:
 
-  8. Check the **Use alternate credentials** radio button
+    ```
+      WALLET_LOCATION = (SOURCE = (METHOD = file) (METHOD_DATA = (DIRECTORY=C:\DATA\WALLET))) 
+    ```
 
-  9. Enter **User name** and **Password**
+     ![Get Data](./images/wallet3.png " ")
 
-  ![Enter Credentials](./images/03-db-credentials-use-alternate.png " ")
+    
+  - Open Power BI Desktop
 
-  10. Click **Connect**
+  - Click **Get Data** and select **More** at the bottom of the list
+
+  ![Get Data](./images/getdatamore.png " ")
+
+  - Select **Database** on the left side menu
+
+  - Select **Oracle database** from the list
+
+  ![Select Oracle Database](./images/databaseoracle.png " ")
+
+  - Enter the **Server** in the following format:
+
+    ```
+    ADB_low
+    ```
+
+  ![Select Oracle Database](./images/adb1.png " ")
+
+  - Check the **DirectQuery** radio button
+    
+  - Click **OK**
+
+  - Power BI will request you to enter the database credentials. Select ***Database*** on the left side of the window and enter ***Admin*** and password and click Connect.
+
+  ![Enter Credentials](./images/adb2.png " ")
+
+  - Power BI should now connect to ADB. In the navigator window, select the schema objects needed and load the data. 
+
+    ![Enter Credentials](./images/adb3.png " ")
 
 
 ## Task 4 Build your report
 
   1. Select the **data** build your Microsoft Power BI Desktop report by checking column names within each database table
 
-  ![Select Data](./images/04-data-selection.png " ")
+  ![Select Data](./images/dataselection.png " ")
 
   2. Select your desired **Visualization** (table) by examining option under **Visualizations** 
 
-  ![Select Visualization](./images/04-Visualizations.png " ")
+  ![Select Visualization](./images/visualizations.png " ")
 
 ## Task 5 Review your generated report and adjust properties as needed
 
-  ![Report Genererated](./images/05-report-generated.png " ")
+  ![Report Genererated](./images/reportgenerated.png " ")
 
 
 ## References
@@ -98,7 +123,7 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Fantastic! You successfully learned to use the Database Actions Console and Performance Hub on your Autonomous Database instance.*
+*Fantastic! You successfully learned to connect Autonomous Database to POwer BI.*
 
 - **Author** - Anwar Belayachi
 - **Last Updated By/Date** - August 20, 2024
