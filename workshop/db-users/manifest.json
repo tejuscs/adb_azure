@@ -48,7 +48,7 @@
             "filename": "./../../connect-to-swingbech-app/connect-to-swingbech-app.md"
         },
         {
-            "title": "Lab 7: Connect PowerBI with ADB",
+            "title": "Lab 5: Connect PowerBI with ADB",
             "description": "Connect PowerBI with Autonomous Database",
             "partnumber": "Ennnnn_01",
             "publisheddate": "07/25/2024",
@@ -56,7 +56,7 @@
             "filename": "./../../connect-to-powerbi/connect-to-powerbi.md"
         },
         {
-            "title": "Lab 8: Chat with your data in ADB using Generative AI",
+            "title": "Lab 6: Chat with your data in ADB using Generative AI",
             "description": "Chat with your data in ADB using Generative AI",
             "partnumber": "Ennnnn_01",
             "publisheddate": "07/25/2024",
