@@ -32,10 +32,11 @@ As a database user, DBA or application developer,
 
 - Click on your pre-configured windows virtual machine and copy the Public IP address.
 
-***NOTE: Please select your assigned Windows VM.***
+    ***NOTE: Please select your assigned Windows VM.***
     ```
     VM Name: UserXXVM
     ```
+
     ![This image shows the result of performing the above step.](./images/ip.png " ")
 
 - Open Microsoft Remote Desktop application on your local machine and connect to Virtual machine.
