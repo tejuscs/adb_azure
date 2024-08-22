@@ -92,6 +92,8 @@ As a database user, DBA or application developer,
     Connection Name: Enter a connection name
     Authentication Type: Default
     Role: Default
+    Username: Admin
+    Passwowd: WElcome_123#
     Connection Type: Cloud Wallet
     Configuration File: Choose the Zip file you downloaded earlier in the lab
     Service: ADBName_High

@@ -139,7 +139,7 @@ Now that you have installed swingbench, the next step is to connect the applicat
     ```
     Username: soe
     Password: WElcome_123#
-    Connect String: <Copy from Azure portal>
+    Connect String: adb_tp <Copy from Azure portal>
     ```
 
     ![This image shows the result of performing the above step.](./images/swingbench2.png " ")
