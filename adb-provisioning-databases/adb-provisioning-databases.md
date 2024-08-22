@@ -102,9 +102,9 @@ For this lab, we will be using the following Subscription: **omcpmhol1** Resourc
     
     Required mutual TLS (mTLS) authentication: Disabled
     
-    Virtual network: TBD
+    Virtual network: ocw24-hol-vnet
     
-    Subnet: TBD
+    Subnet: ocw24-hol-delegated-subnet
     ```
 
     ![This image shows the result of performing the above step.](./images/network.png " ")
