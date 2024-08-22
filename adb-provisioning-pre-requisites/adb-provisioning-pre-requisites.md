@@ -1,5 +1,5 @@
 
-# Pre-requisiteis to provision an Autonomous Transaction Processing Database@Azure
+# Pre-requisite to provision an Autonomous Transaction Processing Database@Azure
 
 ## Introduction
 
@@ -16,7 +16,7 @@ As a database user, DBA or application developer:
 
 ## Task 1: Create a Resource Group
 
-In this section, you will create a resource group and VNet as a pre-requisite steps before provisioiong ADB@Azure.
+In this section, you will create a resource group and VNet as a pre-requisite steps before provisioning ADB@Azure.
 
 1.	Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on Resource groups icon.
 
@@ -123,7 +123,7 @@ You may now **proceed to the next lab** to provision Autonomous Database@Azure.
 
 ## Acknowledgements
 
-*All Done! You have successfully created Resource Group and Virutal Network.*
+*All Done! You have successfully created Resource Group and Virtual Network.*
 
 - **Author** - Sanjay Rahane, Principal Cloud Architect, North America Cloud Engineering Services (CES)
 

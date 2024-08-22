@@ -4,7 +4,7 @@
 
 This Lab walks you through on how to connect Visual Studio with Autonomous Database. 
 
-The Windows Virtual machine provided for the workshop s pre-configured with Visual Studio and any extensions required. RDP into the Windows Virutal Machine to connect VS with Autonomous Database.
+The Windows Virtual machine provided for the workshop s pre-configured with Visual Studio and any extensions required. RDP into the Windows Virtual Machine to connect VS with Autonomous Database.
 
 
 Estimated Time: 30 minutes
@@ -13,7 +13,7 @@ Estimated Time: 30 minutes
 
 As a database user, DBA or application developer,
 1. Create a development system from a pre-built Platform images
-2. Configure a secure connection from your development system to your autonomous database using Visual Studio, Oracle SQL Developer, and SQLCL.
+2. Configure a secure connection from your development system to your autonomous database using Visual Studio, Oracle SQL Developer, and SQLcl.
 
 ### Required Artifacts
 
@@ -30,11 +30,11 @@ As a database user, DBA or application developer,
     ![This image shows the result of performing the above step.](./images/virtualmachine.png " ")
 
 
-- Click on your pre-configured windows virtual machine and copy the Public IP adress.
+- Click on your pre-configured windows virtual machine and copy the Public IP address.
     
     ![This image shows the result of performing the above step.](./images/ip.png " ")
 
-- Open Microsft Remote Desktop application on your local machine and connect to Virtual machine.
+- Open Microsoft Remote Desktop application on your local machine and connect to Virtual machine.
 
     ![This image shows the result of performing the above step.](./images/addpc.png " ")
 
@@ -43,7 +43,7 @@ As a database user, DBA or application developer,
 - User account: 
 
     ```
-    Add user accoutn User: opc
+    Add user account User: opc
     Password: WElcome_123#
     ```
     
@@ -105,7 +105,7 @@ As a database user, DBA or application developer,
 
     ![This image shows the result of performing the above step.](./images/sqlcl.png " ")
 
-- SQLcl Terminal is opened and connected to your Autonomous Datbaase. 
+- SQLcl Terminal is opened and connected to your Autonomous Database. 
 
 - Test the connectivity: 
 

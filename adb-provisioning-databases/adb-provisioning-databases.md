@@ -15,7 +15,7 @@ As a database user, DBA or application developer:
 
 ### Required Artifacts
 
-- An Azure account with a pre-configured Resource Group and Virutal Network.
+- An Azure account with a pre-configured Resource Group and Virtual Network.
 
 ## Task 1: Create an Autonomous Transaction Processing Database
 
@@ -98,7 +98,7 @@ In this section you will be provisioning Autonomous database using the Azure clo
 - For the lab, we select the following and click Next. 
 
     ```
-    Access typs: Managed private virtual network IP only
+    Access type: Managed private virtual network IP only
     Required mutual TLS (mTLS) authentication: Disabled
     Virtual network: TBD
     Subnet: TBD
@@ -134,4 +134,4 @@ You may now **proceed to the next lab**.
 - **Last Updated By/Date** - Tejus Subrahmanya, July 2024
 
 ## See an issue or have feedback?  
-Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata' as workshop name, include Lab name and issue / feedback details. Thank you!
+Please submit feedback [here](https://apexapps.oracle.com/pls/apex/f?p=133:1:::::P1_FEEDBACK:1).   Select 'Autonomous DB on Dedicated Exadata as workshop name, include Lab name and issue / feedback details. Thank you!

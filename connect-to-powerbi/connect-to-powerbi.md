@@ -11,8 +11,8 @@ Estimated Time: 10-15 minutes
 
 ### Objectives
 
-1. Use Microsft Power BI Desktop to retrieve data from an Autonomous Database in Oracle Database@Azure.
-2. Configure Power BI to querry an Antuonomous database schema.
+1. Use Microsoft Power BI Desktop to retrieve data from an Autonomous Database in Oracle Database@Azure.
+2. Configure Power BI to query an Autonomous database schema.
 3. Generate a Power BI Desktop report.
 
 ### Prerequisites
@@ -37,7 +37,7 @@ Estimated Time: 10-15 minutes
 
 Ensure that the Oracle Client for Microsoft Tools is installed on the virtual machine you are using for this lab
 
-- Verify that the following directory with its subfolders and files exist
+- Verify that the following directory with its subfolder and files exist
 
 ![Get Data](./images/oracleclient.png " ")
 
@@ -110,7 +110,7 @@ Ensure that the Oracle Client for Microsoft Tools is installed on the virtual ma
 
 ## Task 5 Review your generated report and adjust properties as needed
 
-  ![Report Genererated](./images/reportgenerated.png " ")
+  ![Report Generated](./images/reportgenerated.png " ")
 
 
 ## References

@@ -1,8 +1,8 @@
-# Connect Autonomous Database with Swinbench
+# Connect Autonomous Database with Swingbench
 
 ## Introduction
 
-This lab walks you thorugh how to installat and configure a workload generation tool called Swingbench and monitor the performance of Autonomous Database.
+This lab walks you through how to install and configure a workload generation tool called Swingbench and monitor the performance of Autonomous Database.
 
 Estimated Time: 10 minutes
 
@@ -27,7 +27,7 @@ Refer to the Lab 2: **Connect securely with Visual Studio code**.
 
     *The remainder of this lab assumes you are connected to the Windows instance through RDP  and are operating from the Windows instance and not your local machine (except if noted).*
 
-- Once connected, open a Microsft Edge browser and download the latest version of swingbench.
+- Once connected, open a Microsoft Edge browser and download the latest version of swingbench.
 
     ````
     <copy>
@@ -54,7 +54,7 @@ If you have not downloaded the wallet already to your Dev Client machine in an e
 
 ## Task 2: Connect swingbench application to Autonomous database
 
-Now that you have installed swingbench, the next step is to connet the application to your Autonomous database.
+Now that you have installed swingbench, the next step is to connect the application to your Autonomous database.
 
 - You are ready to run Swingbench workloads on Autonomous database. Workloads are simulated by users submitting transactions to the database.
 
@@ -85,7 +85,7 @@ Now that you have installed swingbench, the next step is to connet the applicati
 
     ![This image shows the result of performing the above step.](./images/oewizard3.png " ")
 
-- Change the password to ***WElcome_123#*** and keep the remaing default and click Next.
+- Change the password to ***WElcome_123#*** and keep the remaining default and click Next.
 
     ![This image shows the result of performing the above step.](./images/oewizard4.png " ")
 
@@ -141,7 +141,7 @@ Now that you have installed swingbench, the next step is to connet the applicati
 
     ![This image shows the result of performing the above step.](./images/connectstring.png " ")
 
- - Test the connectiong to the database by clicking on connect link in Connect String. If the entered details are correct, you should see a confirmation popup - ***Connected to database using supplied parameters***
+ - Test the connection to the database by clicking on connect link in Connect String. If the entered details are correct, you should see a confirmation popup - ***Connected to database using supplied parameters***
 
     ![This image shows the result of performing the above step.](./images/connect.png " ")
 

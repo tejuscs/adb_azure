@@ -31,7 +31,7 @@ The lab's business scenario is based on Oracle MovieStream - a fictitious movie 
 
 Autonomous Database supports models from OCI Generative AI, Azure OpenAI, OpenAI, and Cohere. This workshop will use the Azure OpenAI model.
 
-1.	Login to your Microsost Windows Virtual machine and open Visual studio with Autonomous Database.
+1.	Login to your Microsoft Windows Virtual machine and open Visual studio with Autonomous Database.
 
 
     ![This image shows the result of performing the above step.](./images/vs1.png " ")
