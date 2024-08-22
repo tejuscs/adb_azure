@@ -60,21 +60,16 @@ Now that you have installed swingbench, the next step is to connect the applicat
 
 - Load sample data to your Autonomous Database. To start oewizard to load Schema and data, navigate to Swinbench winbin folder and run oewizard.bat.
 
-***NOTE: Linux users start oewizard from swingbench/bin folder.***
 
-    ```
-    <copy>
-    cd C:\Users\opc\Downloads\swingbenchlatest\swingbench\winbin
-    </copy>
-    ```
+```
+<copy>
+cd C:\Users\opc\Downloads\swingbenchlatest\swingbench\winbin
 
-    ```
-    <copy>
-    oewizard.bat
-    </copy>
-    ```
+oewizard.bat
+</copy>
+```
 
-    ![This image shows the result of performing the above step.](./images/oewizard.png " ")
+![This image shows the result of performing the above step.](./images/oewizard.png " ")
 
 - Click Next and select Version 2.0.
 
