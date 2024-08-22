@@ -117,7 +117,7 @@ Moviestream schema password: ***watchS0meMovies#***.
 
     ![This image shows the result of performing the above step.](./images/mssql.png " ")
 
-***Note: Please enter the Secret key that you downloaded earlier in the Lab.***
+***Note: Please edit the Secret key that you downloaded earlier in the Lab.***
 
     ```
     <copy>
