@@ -38,13 +38,14 @@ Autonomous Database supports models from OCI Generative AI, Azure OpenAI, OpenAI
 
 -  Right click on your Database connection and clone the connection to add ***moviestream*** user connection.
 
-- Enter the connection name, Username and password and click ***Save***.
+- Enter the connection name, Username and password and click Save.
+    
     ***NOTE: Copy the username and password from below.***
 
     ```
     <copy>
-        Username: MOVIESTREAM
-        Password: watchS0meMovies#
+    Username: MOVIESTREAM
+    Password: watchS0meMovies#
     </copy>
     ```
 
