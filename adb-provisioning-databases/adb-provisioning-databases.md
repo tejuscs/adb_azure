@@ -47,7 +47,7 @@ For this lab, we will be using the following Subscription: **omcpmhol1** Resourc
 
     *NOTE: Autonomous Database supports different workload types, including: Data Warehouse and Transaction Processing. Both of these workload types provide performance improvements and additional features that support operations for the specified workload. [Learn More](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/about-autonomous-database-workloads.html#GUID-E1C8C5F2-22FB-4225-A3B9-9E78277A5834)*
 
--  Select **Transaction Processing** under **Workload typ** dropdown.
+-  Select **Transaction Processing** under **Workload type** dropdown.
     
     ![This image shows the result of performing the above step.](./images/transaction.png " ")
 
