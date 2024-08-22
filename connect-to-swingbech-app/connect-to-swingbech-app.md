@@ -63,10 +63,15 @@ Now that you have installed swingbench, the next step is to connect the applicat
 ***NOTE: Linux users start oewizard from swingbench/bin folder.***
 
     ```
+    <copy>
     cd C:\Users\opc\Downloads\swingbenchlatest\swingbench\winbin
+    </copy>
     ```
+
     ```
+    <copy>
     oewizard.bat
+    </copy>
     ```
 
     ![This image shows the result of performing the above step.](./images/oewizard.png " ")

@@ -47,7 +47,9 @@ Ensure that the Oracle Client for Microsoft Tools is installed on the virtual ma
   - Copy the downloaded Autonomous Database credentials zip file into a directory.
 
     ```
-      C:\DATA\Wallet\
+    <copy>
+    C:\DATA\Wallet\
+    </copy>
     ```
   
      ![Get Data](./images/wallet1.png " ")
@@ -59,7 +61,9 @@ Ensure that the Oracle Client for Microsoft Tools is installed on the virtual ma
   - Open the sqlnet.ora configuration file in the credentials directory in a text editor and set the DIRECTORY value to the ADB wallet directory location, such as:
 
     ```
+    <copy>
       WALLET_LOCATION = (SOURCE = (METHOD = file) (METHOD_DATA = (DIRECTORY=C:\DATA\WALLET))) 
+    </copy>
     ```
 
      ![Get Data](./images/wallet3.png " ")

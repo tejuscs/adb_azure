@@ -52,8 +52,8 @@ NOTE: For this lab you will use the following credentials:
 
     ```
     <copy>
-    SET DEFINE OFF
-    BEGIN
+    set define off
+    begin
     DBMS_CLOUD.CREATE_CREDENTIAL(
     credential_name => 'AZURE_CRED_NAME',
     username => 'tjdatapump',
@@ -72,7 +72,9 @@ NOTE: For this lab you will use the following credentials:
 - Test the access to Azure storage
 
     ```
-    SELECT * FROM DBMS_CLOUD.LIST_OBJECTS('AZURE_CRED_NAME', 'https://tjdatapump.blob.core.windows.net/holcontainer/');
+    <copy>
+    select * from DBMS_CLOUD.LIST_OBJECTS('AZURE_CRED_NAME', 'https://tjdatapump.blob.core.windows.net/holcontainer/');
+    </copy>
     ```
 
     ![This image shows the result of performing the above step.](./images/credentials1.png " ")

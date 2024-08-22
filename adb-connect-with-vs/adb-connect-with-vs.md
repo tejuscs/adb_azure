@@ -43,7 +43,7 @@ As a database user, DBA or application developer,
 - User account: 
 
     ```
-    Add user account User: opc
+    Add user account: opc
     Password: WElcome_123#
     ```
     
@@ -110,7 +110,9 @@ As a database user, DBA or application developer,
 - Test the connectivity: 
 
     ```
+    <copy>
     select * from dual;
+    </copy>
     ```
 
     ![This image shows the result of performing the above step.](./images/sqlcl1.png " ")
