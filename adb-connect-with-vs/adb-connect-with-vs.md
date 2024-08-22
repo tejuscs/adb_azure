@@ -7,7 +7,7 @@ This Lab walks you through on how to connect Visual Studio with Autonomous Datab
 The Windows Virtual machine provided for the workshop is pre-configured with Visual Studio and any extensions required. RDP into the Windows Virtual Machine to connect VS with Autonomous Database.
 
 
-Estimated Time: 30 minutes
+Estimated Time: 10 minutes
 
 ### Objectives
 
