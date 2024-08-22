@@ -38,13 +38,11 @@ As a database admin or user:
 
 ## Task 2: Set up User credentials in your target autonomous database
 
-- Now that we have the credentials token, let's set up the target database to read from the Azure Storage and import data.
-
-- Log into your Autonomous database as admin using either SQL Developer or SQLcl client.
+Now that we have the credentials token, let's set up the target database to read from the Azure Storage and import data.
 
 RDP to your developer client image provided. Once logged into your developer client, launch Visual Studio code as discussed in an earlier lab and connect to your database.
 
-Here, we will use SQLcl to demonstrate the steps needed to set up Azure store credentials.
+Here, we will use SQLcl to demonstrate the steps needed to set up Azure storage credentials.
 
 - Once connected to your autonomous database as ***admin*** user, run the following pl/sql procedure, replacing username and password with your own cloud credentials.
 
@@ -57,7 +55,7 @@ NOTE: For this lab you will use the following credentials:
     DBMS_CLOUD.CREATE_CREDENTIAL(
     credential_name => 'AZURE_CRED_NAME',
     username => 'tjdatapump',
-    password => 'Access_Key'
+    password => 'Access_Key_copied_in_task1'
     );
     END;
     /

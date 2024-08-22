@@ -1,5 +1,5 @@
 
-# Get started - Autonomous Transaction Processing Database@Azure
+# Get started - Autonomous Database@Azure
 
 ## Introduction
 
