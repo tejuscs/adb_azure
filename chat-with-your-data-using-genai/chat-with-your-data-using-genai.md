@@ -39,6 +39,14 @@ Autonomous Database supports models from OCI Generative AI, Azure OpenAI, OpenAI
 -  Right click on your Database connection and clone the connection to add ***moviestream*** user connection.
 
 - Enter the connection name, Username and password and click ***Save***.
+    ***NOTE: Copy the username and password from below.***
+
+    ```
+    <copy>
+        Username: MOVIESTREAM
+        Password: watchS0meMovies#
+    </copy>
+    ```
 
     ![This image shows the result of performing the above step.](./images/clone.png " ")
 
@@ -49,19 +57,19 @@ Autonomous Database supports models from OCI Generative AI, Azure OpenAI, OpenAI
     ![This image shows the result of performing the above step.](./images/admin.png " ")
 
 
-***Note: You will be executing the below sql queries as ***Admin*** user***
+    Note: You will be executing the below sql queries as ***Admin*** user.
 
 ***Create an AI Profile for OCI Generative AI***
 
-- A Select AI profile encapsulates connection information for an AI provider. This includes:
+A Select AI profile encapsulates connection information for an AI provider. This includes:
 1. A security credential (e.g. the resource principal)
 2. The name of the provider
 3. The name of the LLM (optional)
 4. A list of target tables that will be used for natural language queries (required when using NL2SQL) You can create as many profiles as you need, which is useful when comparing the quality of the results of different models.
 
-For a complete list of the Select AI profile attributes, see the [DBMS_CLOUD_AI_Package](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/dbms-cloud-ai-package.html#GUID-D51B04DE-233B-48A2-BBFA-3AAB18D8C35C) in the Using Oracle Autonomous Database Serverless documentation.
+For a complete list of the Select AI profile attributes, see the [DBMS CLOUD AI Package](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/dbms-cloud-ai-package.html#GUID-D51B04DE-233B-48A2-BBFA-3AAB18D8C35C) in Autonomous Database Serverless documentation.
 
--  Define the variables (Run the below as Admin user). [Get your Azure API key from here](https://tjdatapump.blob.core.windows.net/holcontainer/secret.txt)
+-  Define the variables (Run the below as Admin user). Get your ***Secret*** from [here](https://genaisecret.blob.core.windows.net/secret/secret.txt)
 
     ```
     <copy>
