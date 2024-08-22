@@ -21,7 +21,6 @@ Estimated Time: 10-15 minutes
 - A pre-provisioned Azure Windows virtual machine with network access to the database.
 
 
-<!-- Start your tasks here. Tasks must begin with a heading 2 (##). Create as many task sections as needed. -->
 
 ## Task 1: Verify that Power BI Desktop is installed in your Virtual Machine
 
