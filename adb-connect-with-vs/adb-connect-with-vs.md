@@ -1,10 +1,10 @@
-# Configure a development system for use with your Autonomous database
+# Configure a development system for use with your Autonomous Database
 
 ## Introduction
 
 This Lab walks you through on how to connect Visual Studio with Autonomous Database. 
 
-The Windows Virtual machine provided for the workshop s pre-configured with Visual Studio and any extensions required. RDP into the Windows Virtual Machine to connect VS with Autonomous Database.
+The Windows Virtual machine provided for the workshop is pre-configured with Visual Studio and any extensions required. RDP into the Windows Virtual Machine to connect VS with Autonomous Database.
 
 
 Estimated Time: 30 minutes
@@ -12,8 +12,7 @@ Estimated Time: 30 minutes
 ### Objectives
 
 As a database user, DBA or application developer,
-1. Create a development system from a pre-built Platform images
-2. Configure a secure connection from your development system to your autonomous database using Visual Studio, Oracle SQL Developer, and SQLcl.
+1. Configure a secure connection from your development system to your autonomous database using Visual Studio, and SQLcl.
 
 ### Required Artifacts
 
@@ -94,7 +93,7 @@ As a database user, DBA or application developer,
     Authentication Type: Default
     Role: Default
     Username: Admin
-    Passwowd: WElcome_123#
+    Password: WElcome_123#
     Connection Type: Cloud Wallet
     Configuration File: Choose the Zip file you downloaded earlier in the lab
     Service: ADBName_High

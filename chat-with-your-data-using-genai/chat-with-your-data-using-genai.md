@@ -1,5 +1,5 @@
 
-# Chat with your data in Autonomous Database using generative AI
+# Chat with your data in Autonomous Database using Generative AI
 
 ## Introduction
 
@@ -131,7 +131,7 @@ Create a credential that allows the user to access the Azure OpenAI endpoint
 ![This image shows the result of performing the above step.](./images/mssql1.png " ")
 
 
--  Create an AI profile for the Azure OpenAI model. Copy and paste the following code into your SQL Worksheet, and then click the Run Script icon..
+-  Create an AI profile for the Azure OpenAI model. Copy and paste the following code into your SQL Worksheet, and then click the Run Script icon.
 
 ```
 <copy>

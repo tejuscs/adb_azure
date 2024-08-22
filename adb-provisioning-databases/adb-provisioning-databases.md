@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to get started using the Oracle Autonomous Database@Azure. You will provision a new database.
+This lab walks you through the steps to provision Autonomous Database@Azure. 
 
 Estimated Time: 10 minutes
 
@@ -19,7 +19,7 @@ As a database user, DBA or application developer:
 
 ## Task 1: Create an Autonomous Transaction Processing Database
 
-In this section you will be provisioning Autonomous database using the Azure cloud console.
+In this section, you will be provisioning Autonomous database using the Azure cloud console.
 
 1.	Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on Oracle Database@Azure.
 
@@ -64,7 +64,7 @@ For this lab, we will be using the following Subscription: **omcpmhol1** Resourc
 
 -  Under **Backup retention** select the Backup retention period in days.
     
-    *For this lab, we will select 1 day as Backup retention period.*
+    *For this lab, we will select 1 day as the Backup retention period.*
 
     ![This image shows the result of performing the above step.](./images/backup.png " ")
 
@@ -78,7 +78,7 @@ For this lab, we will be using the following Subscription: **omcpmhol1** Resourc
     </copy>
     ```
 
-- Select the  **License typ** as **TBD**.
+- Select the  **License type** as **License included**.
 
     ![This image shows the result of performing the above step.](./images/license.png " ")
 

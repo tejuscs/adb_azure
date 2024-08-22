@@ -17,13 +17,13 @@ As an administrator:
 
 - A pre-provisioned instance of Autonomous database and Developer Client image. 
 
-Refer to the Lab 2: **Connect securely with Visual Studio code**.
+Refer to Lab 2: **Connect securely with Visual Studio code**.
 
 ## Task 1: Download and install Swingbench
 
 - We will start with downloading and installing Swingbench in a developer client virtual machine.
 
-- Connect to your developer client machine via RDP. Detailed instructions are provided in that Lab 2: **Connect securely with Visual Studio code**.
+- Connect to your developer client machine via RDP. Detailed instructions are provided in Lab 2: **Connect securely with Visual Studio code**.
 
     *The remainder of this lab assumes you are connected to the Windows instance through RDP  and are operating from the Windows instance and not your local machine (except if noted).*
 
@@ -153,7 +153,7 @@ oewizard.bat
 
     ![This image shows the result of performing the above step.](./images/start1.png " ")
 
-***NOTE: Do not disconnect the swingbench application. The next steps shows the Auto scaling capability of Autonomous Database.***
+***NOTE: Do not disconnect the swingbench application. The next steps show the Autoscaling capability of the Autonomous Database.***
 
 ## Task 3: Enable Compute Auto Scaling in you Autonomous database
 

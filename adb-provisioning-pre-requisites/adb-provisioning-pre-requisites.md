@@ -3,22 +3,22 @@
 
 ## Introduction
 
-This lab walks you through the pre-requisites to get started with Autonomous Database@Azure. This involves creating a Resource Group, Vnet and adding subnet that needs to be delegated for the Oracle Database@Azure service.
+This lab walks you through the prerequisites to get started with Autonomous Database@Azure. This involves creating a Resource Group, Vnet, and adding a subnet that needs to be delegated for the Oracle Database@Azure service.
 
 
 Estimated Time: 20 minutes
 
 ### Objectives
 
-As a database user, DBA or application developer:
+As a database user, DBA, or application developer:
 
-1. Create Resource Group and Virtual Network in Azure portal.
+1. Create a Resource Group and Virtual Network in the Azure portal.
 
 ## Task 1: Create a Resource Group
 
 In this section, you will create a resource group and VNet as a pre-requisite steps before provisioning ADB@Azure.
 
-1.	Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on Resource groups icon.
+1.  Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on the Resource groups icon.
 
     ![](./images/resource_group_image1.png " ")
 
@@ -26,23 +26,24 @@ In this section, you will create a resource group and VNet as a pre-requisite st
 
     ![](./images/resource_group_image2.png " ")
 
-3.	On “Create resource groups’ provide details in each tab as mentioned in below screenshot. 
+3.	On “Create resource groups’ provide details in each tab as mentioned in the below screenshot. 
     Basics:
-    a.	Subscription – select your billing subscription in directory you selected
-    b.	Resource group – Enter the name for resource group to be created
-    c.	Region – Select your region from the drop-down list
+    a.  Subscription – select your billing subscription in the directory you selected
+    b.  Resource group – Enter the name for the resource group to be created
+    c.  Region – Select your region from the drop-down list
+    
 
     ![](./images/resource_group_image3.png " ")
 
     Tags
-    Provide inputs to organize your resource with tagging as shown in below screenshot
+    Provide inputs to organize your resource with tagging as shown below screenshot
     a.	Name
     b.	Value
     
     ![](./images/resource_group_image4.png " ")
 
 
-    On Review + create page, it will validate the inputs provided in previous steps. Once Validation is passed, it will create a resource group.
+    On Review + create page, it will validate the inputs provided in the previous steps. Once Validation is passed, it will create a resource group.
 
     ![](./images/resource_group_image5.png " ")
 

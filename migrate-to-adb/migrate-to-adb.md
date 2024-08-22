@@ -64,10 +64,11 @@ NOTE: For this lab you will use the following credentials:
     </copy>
     ```
 
-- Here's a screen shot of the above command run from a SQLcl.
+- Here's a screenshot of the above command run from a SQLcl.
+
     ![This image shows the result of performing the above step.](./images/credentials.png " ")
 
-- Ensure the pl/sql procedure executed successfully from the log message.
+- Ensure the pl/sql procedure is executed successfully from the log message.
 
 - Test the access to Azure storage
 
@@ -79,7 +80,7 @@ NOTE: For this lab you will use the following credentials:
 
     ![This image shows the result of performing the above step.](./images/credentials1.png " ")
 
-## Task 3: Import data from Azure store using impdp utility
+## Task 3: Import data from Azure storage using impdp utility
 
 - From the same SQLcl window run the data pump import command.
 
@@ -97,7 +98,7 @@ NOTE: For this lab you will use the following credentials:
 
     ![This image shows the result of performing the above step.](./images/import.png " ")
 
-- Your import will complete in a few minutes as shown below.
+- Your import will be completed in a few minutes as shown below.
 
     
     ![This image shows the result of performing the above step.](./images/import1.png " ")

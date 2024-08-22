@@ -1,7 +1,7 @@
 # Connecting Power BI Desktop to an Oracle Autonomous Database in Oracle Database@Azure 
 
 ## Introduction
-Power BI Desktop is is a free application you install on your Windows machines that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple sources of data to build visuals and collections of visuals you can share as reports.
+Power BI Desktop is a free application you install on your Windows machines that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple sources of data to build visuals and collections of visuals you can share as reports.
 
 Oracle Database@Azure is an Oracle and Microsoft partnership solution that delivers Oracle database services running on Oracle Cloud Infrastructure (OCI), collocated in Microsoft Azure data centers. Azure customers can now procure, deploy, and use Oracle database services running on OCI within the native Azure portal and APIs, giving them an OCI-in-Azure-like experience. 
 
@@ -126,7 +126,7 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-*Fantastic! You successfully learned to connect Autonomous Database to POwer BI.*
+*Fantastic! You successfully learned to connect Autonomous Database to Power BI.*
 
 - **Author** - Anwar Belayachi
 - **Last Updated By/Date** - August 20, 2024
