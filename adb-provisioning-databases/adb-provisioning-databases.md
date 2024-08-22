@@ -99,10 +99,14 @@ For this lab, we will be using the following Subscription: **omcpmhol1** Resourc
 
     ```
     Access type: Managed private virtual network IP only
+    
     Required mutual TLS (mTLS) authentication: Disabled
+    
     Virtual network: TBD
+    
     Subnet: TBD
     ```
+
     ![This image shows the result of performing the above step.](./images/network.png " ")
     
 
