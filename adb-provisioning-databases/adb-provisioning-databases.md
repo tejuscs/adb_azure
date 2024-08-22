@@ -41,7 +41,7 @@ In this section you will be provisioning Autonomous database using the Azure clo
 
     ![This image shows the result of performing the above step.](./images/basics.png " ")
 
-    *For this lab, we will be using the following Subscription: **TBD** Resource Group: **TBD** Region: **East US** .*
+For this lab, we will be using the following Subscription: **omcpmhol1** Resource Group: **ocw24-hol-resource-group-east-us** Region: **East US**.
 
 -  Enter the details in the **Configuration** page.
 
