@@ -109,7 +109,9 @@ For a complete list of the Select AI profile attributes, see the [DBMS CLOUD AI 
 - Now log in as the ***moviestream*** that will be using generative AI.
 Create a credential that allows the user to access the Azure OpenAI endpoint
 
-***NOTE: Note: the MOVIESTREAM user was created as part of the setup and tables that were created in that schema. Moviestream password ***'watchS0meMovies#'***.***
+NOTE: The MOVIESTREAM user was created as part of the migrating to ADB Lab. 
+
+Moviestream schema password: ***watchS0meMovies#***.
 
 -  Right click on ***moviestream*** connection in your Visual Studio and Open SQL Worksheet. 
 
