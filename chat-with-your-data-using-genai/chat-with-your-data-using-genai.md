@@ -118,9 +118,12 @@ Create a credential that allows the user to access the Azure OpenAI endpoint
 
 NOTE: The MOVIESTREAM user was created as part of the migrating to ADB Lab. 
 
+
 Moviestream schema password: ***watchS0meMovies#***.
 
 -  Right click on ***moviestream*** connection in your Visual Studio and Open SQL Worksheet. 
+
+    Note: You will be executing the below sql queries as ***moviestream*** user.
 
     ![This image shows the result of performing the above step.](./images/mssql.png " ")
 
