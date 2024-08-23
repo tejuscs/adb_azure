@@ -105,7 +105,7 @@ For a complete list of the Select AI profile attributes, see the [DBMS CLOUD AI 
 
     ![This image shows the result of performing the above step.](./images/variable2.png " ")
 
-- Grant DBMS_CLOUD_AI to moviestream user
+- Grant execute to moviestream user
 
     ```
     <copy>
@@ -223,7 +223,7 @@ Let's look at a couple of examples:
 
 ```
 <copy>
-select ai chat what is autonomous database;
+SELECT AI chat what is autonomous database;
 </copy>
 ```
 
@@ -260,7 +260,7 @@ What are total sales of tom hanks movies
 
 ```
 <copy>
-select ai what are our total streams broken out by genre;
+SELECT AI what are our total streams broken out by genre;
 </copy>
 ```
 
@@ -268,7 +268,7 @@ select ai what are our total streams broken out by genre;
 
 ```
 <copy>
-select ai explainsql what are our total streams broken out by genre;
+SELECT AI explainsql what are our total streams broken out by genre;
 </copy>
 ```
 
@@ -297,9 +297,11 @@ FROM v_customer_support WHERE support_chat_id = 1;
 </copy>
 ```
 
+
+- Now apply GenAI in a query to get the answer
+
 ```
 <copy>
--- now apply GenAI in a query to get the answer
 WITH prompt_document AS (
     -- this json document
     SELECT JSON_OBJECT(
