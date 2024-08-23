@@ -95,12 +95,12 @@ NOTE: For this lab you will use the following credentials:
      </copy>
     ```
 
-    ![This image shows the result of performing the above step.](./images/import.png " ")
+    ![This image shows the result of performing the above step.](./images/import1.png " ")
 
 - Your import will be completed in a few minutes as shown below.
 
     
-    ![This image shows the result of performing the above step.](./images/import1.png " ")
+    ![This image shows the result of performing the above step.](./images/import.png " ")
 
 All Done! Your application schema was successfully imported.
 
