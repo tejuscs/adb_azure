@@ -105,7 +105,7 @@ For a complete list of the Select AI profile attributes, see the [DBMS CLOUD AI 
 
     ![This image shows the result of performing the above step.](./images/variable2.png " ")
 
-- Grant execute on moviestream user
+- Grant DBMS_CLOUD_AI to moviestream user
 
     ```
     <copy>
