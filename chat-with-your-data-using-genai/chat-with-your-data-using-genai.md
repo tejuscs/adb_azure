@@ -105,6 +105,13 @@ For a complete list of the Select AI profile attributes, see the [DBMS CLOUD AI 
 
     ![This image shows the result of performing the above step.](./images/variable2.png " ")
 
+- Grant execute on moviestream user
+
+    ```
+    <copy>
+    grant execute on DBMS_CLOUD_AI to moviestream;
+    </copy>
+    ```
 
 - Now log in as the ***moviestream*** that will be using generative AI.
 Create a credential that allows the user to access the Azure OpenAI endpoint
@@ -284,8 +291,12 @@ SELECT JSON_OBJECT(
         'task' VALUE 'summarize the support chat in 3 sentences. also return the customer sentiment',
         support_chat) AS prompt_details
 FROM v_customer_support WHERE support_chat_id = 1;
+</copy>
+```
 
--- now apply GenAI in a query to get teh answer
+```
+<copy>
+-- now apply GenAI in a query to get the answer
 WITH prompt_document AS (
     -- this json document
     SELECT JSON_OBJECT(
