@@ -40,9 +40,9 @@ As a database admin or user:
 
 Now that we have the credentials token, let's set up the target database to read from the Azure Storage and import data.
 
-RDP to your developer client image provided. Once logged into your developer client, launch Visual Studio code as discussed in an earlier lab and connect to your database.
+RDP to your provided developer client image. Once logged into your developer client, launch **Visual Studio Code** as discussed in an earlier lab and connect to your database.
 
-Here, we will use SQLcl to demonstrate the steps needed to set up Azure storage credentials.
+Here, we will use **SQLcl** to demonstrate the steps needed to set up Azure storage credentials.
 
 - Once connected to your autonomous database as ***admin*** user, run the following pl/sql procedure, replacing username and password with your own cloud credentials.
 

@@ -112,7 +112,7 @@ Ensure that the Oracle Client for Microsoft Tools is installed on the virtual ma
 
   ![Select Visualization](./images/visualizations.png " ")
 
-## Task 5 Review your generated report and adjust properties as needed
+## Task 5 Review your generated report and adjust properties and visuals as needed
 
   ![Report Generated](./images/reportgenerated.png " ")
 
@@ -129,4 +129,4 @@ You may now **proceed to the next lab**.
 *Fantastic! You successfully learned to connect Autonomous Database to Power BI.*
 
 - **Author** - Anwar Belayachi
-- **Last Updated By/Date** - August 20, 2024
+- **Last Updated By/Date** - Anwar Belayachi / August 20, 2024

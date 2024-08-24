@@ -22,7 +22,7 @@ As a database user, DBA or application developer,
 
 ## Task 1: Connect Windows compute client to Remote Desktop
 
-- Log in to your cloud account using your tenant name, username and password.
+- Log in to the Azure portal with your username/email and password.
 
 - Click **Menu** and select **Virtual machines**.
     
@@ -57,7 +57,7 @@ As a database user, DBA or application developer,
 
 ## Task 2: Connect Autonomous Database with Visual Studio
 
-- To download Autonomous Database credential wallet, login to Azure portal from your Windows VM and navigate to Oracle Database@Azure and Oracle Autonomous Database Service.
+- To download the Autonomous Database credential wallet, login to the Azure portal from your Windows VM and navigate to Oracle Database@Azure and click on Oracle Autonomous Database Service.
 
     ![This image shows the result of performing the above step.](./images/adb1.png " ")
 
