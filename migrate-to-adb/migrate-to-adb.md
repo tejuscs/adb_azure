@@ -44,9 +44,9 @@ RDP to your provided developer client image. Once logged into your developer cli
 
 Here, we will use **SQLcl** to demonstrate the steps needed to set up Azure storage credentials.
 
-- Once connected to your autonomous database as ***admin*** user, run the following pl/sql procedure, replacing username and password with your own cloud credentials.
+- Once connected to your autonomous database as ***admin*** user, run the following pl/sql procedure, replacing password with access key.
 
-NOTE: For this lab you will use the following credentials:
+NOTE: For this lab you will use ***tjdatapump*** as username.
 
     ```
     <copy>
