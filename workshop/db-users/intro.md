@@ -32,6 +32,7 @@ Find more details on getting started [Onboarding with Oracle Database@Azure](htt
 Please proceed to the next lab.
 
 ## Acknowledgements
-- **Authors/Contributors** - Autonomous Database Product Management
+- **Authors/Contributors** - Tejus Subrahmanya, Principal Product Manager and 
+Anwar Belayachi, Senior Principal Solution Architect
 - **Contributors** - Sanjay Rahane, Principal Cloud Architect
 - **Last Updated By/Date** - Tejus Subrahmanuya, July 2024
