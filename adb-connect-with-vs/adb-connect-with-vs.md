@@ -79,7 +79,7 @@ As a database user, DBA or application developer,
 
 - Open Visual Studio and click on SQL Developer extension. 
 
-NOTE: It will take a minute for SQL Developer extension to show up in Visual Studio.
+    NOTE: It will take a minute for SQL Developer extension to show up in Visual Studio.
 
     ![This image shows the result of performing the above step.](./images/vs.png " ")
 
