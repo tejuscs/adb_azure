@@ -79,7 +79,7 @@ oewizard.bat
 
 - Copy the Connect string from Azure portal, and change the Username to ***Admin*** and enter your Admin password and click Next. 
 
-NOTE: Copy _tp connect string from Azure console.
+    NOTE: Copy _tp connect string from Azure console.
 
     ![This image shows the result of performing the above step.](./images/connectstring.png " ")
 
