@@ -26,7 +26,7 @@ In this section, you will be provisioning an Autonomous database using the Azure
 
 1.	Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on Oracle Database@Azure.
 
-NOTE: Please click skip if you are asked to enable multi-factor authorization.
+    NOTE: Please click skip if you are asked to enable multi-factor authorization.
 
     ![This image shows the result of performing the above step.](./images/oracledb.png " ")
 
