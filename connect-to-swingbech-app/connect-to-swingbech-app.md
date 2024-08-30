@@ -79,6 +79,8 @@ oewizard.bat
 
 - Copy the Connect string from Azure portal, and change the Username to ***Admin*** and enter your Admin password and click Next. 
 
+NOTE: Copy _tp connect string from Azure console.
+
     ![This image shows the result of performing the above step.](./images/connectstring.png " ")
 
     ![This image shows the result of performing the above step.](./images/oewizard3.png " ")
@@ -168,6 +170,10 @@ oewizard.bat
     ![This image shows the result of performing the above step.](./images/auto2.png " ")
 
 - Navigate back to Azure portal and turn off Auto Scaling. 
+
+- Stop the Swingbench application. 
+
+    ![This image shows the result of performing the above step.](./images/stop.png " ")
 
 You may now **proceed to the next lab**.
 

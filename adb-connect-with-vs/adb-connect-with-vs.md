@@ -79,6 +79,8 @@ As a database user, DBA or application developer,
 
 - Open Visual Studio and click on SQL Developer extension. 
 
+NOTE: It will take a minute for SQL Developer extension to show up in Visual Studio.
+
     ![This image shows the result of performing the above step.](./images/vs.png " ")
 
 - NOTE: It is important to have SQL Developer Extension in your Visual Studio to continue with the Labs. If you do not see the SQL Developer extension, click on Add Extension and Install SQL Developer.

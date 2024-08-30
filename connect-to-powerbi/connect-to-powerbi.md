@@ -104,22 +104,6 @@ Ensure that the Oracle Client for Microsoft Tools is installed on the virtual ma
 
     ![Enter Credentials](./images/adb3.png " ")
 
-
-## Task 4 Build your report
-
-  1. Select the **data** build your Microsoft Power BI Desktop report by checking column names within each database table
-
-  ![Select Data](./images/dataselection.png " ")
-
-  2. Select your desired **Visualization** (table) by examining option under **Visualizations** 
-
-  ![Select Visualization](./images/visualizations.png " ")
-
-## Task 5 Review your generated report and adjust properties and visuals as needed
-
-  ![Report Generated](./images/reportgenerated.png " ")
-
-
 ## References
 
     * https://www.oracle.com/a/ocom/docs/database/microsoft-powerbi-connection-adw.pdf
@@ -132,4 +116,4 @@ You may now **proceed to the next lab**.
 *Fantastic! You successfully learned to connect Autonomous Database to Power BI.*
 
 - **Author** - Anwar Belayachi
-- **Last Updated By/Date** - Anwar Belayachi / August 20, 2024
+- **Last Updated By/Date** - Tejus Subrahmanya / August 20, 2024
