@@ -7,6 +7,9 @@ This lab walks you through the steps to provision Autonomous Database@Azure.
 
 Estimated Time: 10 minutes
 
+Watch the video below for a quick walk-through of the lab.
+[Provision ADB@Azure](videohub:1_2qkjv6o5)
+
 ### Objectives
 
 As a database user, DBA or application developer:
@@ -22,6 +25,8 @@ As a database user, DBA or application developer:
 In this section, you will be provisioning an Autonomous database using the Azure portal.
 
 1.	Login to Azure Portal (portal.azure.com) and navigate to All services. Then click on Oracle Database@Azure.
+
+NOTE: Please click skip if you are asked to enable multi-factor authorization.
 
     ![This image shows the result of performing the above step.](./images/oracledb.png " ")
 
