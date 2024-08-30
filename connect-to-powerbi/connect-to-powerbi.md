@@ -9,6 +9,9 @@ This lab allows you to connect Power BI Desktop to an Oracle Database in Oracle 
 
 Estimated Time: 10-15 minutes
 
+Watch the video below for a quick walk-through of the lab.
+[Simplifying @ Azure](videohub:1_ehgzfts4)
+
 ### Objectives
 
 1. Use Microsoft Power BI Desktop to retrieve data from an Autonomous Database in Oracle Database@Azure.

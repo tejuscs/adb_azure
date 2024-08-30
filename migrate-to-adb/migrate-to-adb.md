@@ -10,6 +10,9 @@ This lab walks you through the steps to migrate a sample application schema usin
 Estimated Time: 15 minutes
 
 
+Watch the video below for a quick walk-through of the lab.
+[Simplifying @ Azure](videohub:1_68d8k1oy)
+
 ### Objectives
 
 As a database admin or user:

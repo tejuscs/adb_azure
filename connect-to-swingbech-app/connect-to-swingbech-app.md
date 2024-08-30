@@ -6,6 +6,9 @@ This lab walks you through how to install and configure a workload generation to
 
 Estimated Time: 10 minutes
 
+Watch the video below for a quick walk-through of the lab.
+[Simplifying @ Azure](videohub:1_xj46a62c)
+
 ### Objectives
 
 As an administrator:

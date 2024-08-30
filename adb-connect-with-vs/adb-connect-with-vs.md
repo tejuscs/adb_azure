@@ -9,6 +9,10 @@ The Windows Virtual machine provided for the workshop is pre-configured with Vis
 
 Estimated Time: 10 minutes
 
+Watch the video below for a quick walk-through of the lab.
+[Simplifying @ Azure](videohub:1_jy1zyem0)
+
+
 ### Objectives
 
 As a database user, DBA or application developer,
