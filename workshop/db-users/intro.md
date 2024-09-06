@@ -1,6 +1,6 @@
 # About this Workshop
 
-## Introduction to Oracle Oracle Database@Azure
+## Introduction to Oracle Database@Azure
 The Autonomous Database hands-on lab provides users with step-by-step instructions to provision Autonomous Database, connect Visual Studio with Autonomous Database, migrate to Autonomous Database, connect PowerBI with Autonomous Database, and chat with your data residing in Autonomous Database using Generative AI. 
 
 
